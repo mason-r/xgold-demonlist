@@ -7,7 +7,7 @@ $(function() {
     $("#ratings").show();
     $("#list").hide();
   })
-})
+});
 
 class Demon {
   constructor(name, attempts, status, creators, level_id, position, publisher, thumbnail, verifier, video) {
@@ -27,7 +27,7 @@ class Demon {
 let demons = [
   new Demon("Reflective", 7108, "Completed", "Mojitoz & more", 78831233, "N/A", "Mojitoz", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "Vorgogne", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
   new Demon("Reanimate", 6851, "Completed", "ilnm & more", 80335620, "N/A", "ilnm", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "Nexus", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
-  new Demon("Napalm", "unknown", "Completed", "Marwec & more", 65561437, "N/A", "Marwec", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "Luqualizer", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
+  new Demon("Napalm", "Unknown", "Completed", "Marwec & more", 65561437, "N/A", "Marwec", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "Luqualizer", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
   new Demon("Lost Love", 6409, "Completed", "TheBlackHell", 85933508, "N/A", "TheBlackHell", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "Aespha", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
   new Demon("troll level", 8158, "Completed", "lexycat, glitchi & lena", 76196489, "N/A", "lexycat", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "J0HNFREE", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
   new Demon("Precipitance", 6332, "Completed", "Extravagon", 60197839, "N/A", "Extravagon", "http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "Extravagon", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
