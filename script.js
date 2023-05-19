@@ -1,6 +1,13 @@
-$("#list-button").click(function() {
-  console.log("test");
-});
+$(function() {
+  $("#list-button").click(function() {
+    $("#list").show();
+    $("#ratings").hide()
+  });
+  $("#ratings-button").click(function() {
+    $("#ratings").show();
+    $("#list").hide();
+  })
+})
 
 class Demon {
   constructor(name, attempts, status, creators, level_id, position, publisher, thumbnail, verifier, video) {
