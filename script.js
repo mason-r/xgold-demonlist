@@ -23,8 +23,8 @@ let demons = [
   new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "neigefeu", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
 ];
 let upcomingDemons = [];
-let ids = ["251"];
-let upcomingIDs = ["29"];
+let ids = [251, 29];
+let upcomingIDs = [235];
 
 function main() {
   let reqPromise = new Promise(function(resolve, reject) {
@@ -45,7 +45,11 @@ function main() {
             currentDemon.creators = "Cirtrax & Gizbro";
             break;
           case "Triple Six":
+            currentDemon.attempts = 10467;
             currentDemon.creators = "Zylenox";
+            break;
+          case "Digital Disarray":
+            currentDemon.creators = "Vlacc, Giron, and Licen"
             break;
         }
         switch (type) {
@@ -84,15 +88,24 @@ function main() {
     } 
     else {
       for (let demon of upcomingDemons) {
-        $("#upcoming-container").append(`
+        if (demon.video === null) {
+          $("#upcoming-container").append(`
           <div class="demon">
-            <a href=${demon.video} target="_blank"><img src=${demon.thumbnail}></a>
             <h1>${demon.name}</h1>
             <h2>By ${demon.creators}</h2>
             <p>Demon list position: ${demon.position}</p>
-            <p>Projected list placement: <b>2</b></p>
-          </div>`
-        )
+            <p>Projected list placement: <b>Unknown</b></p>
+          </div>`)
+        } else {
+          $("#upcoming-container").append(`
+            <div class="demon">
+              <a href=${demon.video} target="_blank"><img src=${demon.thumbnail}></a>
+              <h1>${demon.name}</h1>
+              <h2>By ${demon.creators}</h2>
+              <p>Demon list position: ${demon.position}</p>
+              <p>Projected list placement: <b>Unknown</b></p>
+            </div>`);
+        }
       }
     }
     let demonCounter = 1;
@@ -104,8 +117,7 @@ function main() {
           <h2>By ${demon.creators}</h2>
           <p>Demon list position: ${demon.position}</p>
           <p>Attempt count: ${demon.attempts}</p>
-        </div>`
-      )
+        </div>`);
       demonCounter++;
     }
   });
