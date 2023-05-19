@@ -1,3 +1,7 @@
+$("#list-button").click(function() {
+  console.log("test");
+});
+
 class Demon {
   constructor(name, attempts, status, creators, level_id, position, publisher, thumbnail, verifier, video) {
     this.name = name;
@@ -37,7 +41,7 @@ function main() {
         console.log("API success");
         let currentDemon = new Demon(
           data.data.name, null, null, data.data.creators, data.data.level_id, data.data.position, 
-          data.data.publisher.name, data.data.thumbnail, data.data.verifier.name, data.data.video)
+          data.data.publisher.name, data.data.thumbnail, data.data.verifier.name, data.data.video);
         // clean up the data: replace objects/arrays in creators, add attempt values
         switch (currentDemon.name) {
           case "Prismatic Haze":
