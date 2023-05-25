@@ -37,7 +37,7 @@ let upcomingDemons = [];
 let ids = [251, 29];
 let upcomingIDs = [190];
 
-function main() {
+function list() {
   let reqPromise = new Promise(function(resolve, reject) {
     function getDemonData(id, type) {
       let request = $.ajax({
@@ -134,4 +134,10 @@ function main() {
   });
 }
 
-main();
+function ratings() {
+  // show the demons and their ratings
+  // probably order highest to lowest? or most recent? or add an option to reorder?
+}
+
+list();
+ratings();
