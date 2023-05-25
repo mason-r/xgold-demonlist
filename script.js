@@ -59,8 +59,8 @@ function main() {
             currentDemon.attempts = 10467;
             currentDemon.creators = "Zylenox";
             break;
-          case "Digital Disarray":
-            currentDemon.creators = "Vlacc, Giron, and Licen"
+          case "Retention":
+            currentDemon.creators = "WOOGI1411";
             break;
         }
         switch (type) {
