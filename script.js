@@ -158,7 +158,7 @@ $(document).ready(function() {
             <h1>${currentDemon.name}</h1>
             <h2>By ${currentDemon.creators}</h2>
             <p>Demon list position: ${currentDemon.position}</p>
-            <p>Projected list placement: <b>Unknown</b></p>
+            <p>Projected list placement: <b>2</b></p>
           </div>`);
       }
     });
