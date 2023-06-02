@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
   
   class Demon {
-    constructor(name, attempts, status, creators, level_id, position, publisher, thumbnail, verifier, video) {
+    constructor(name, attempts, status, creators, level_id, position, publisher, verifier, thumbnail, video) {
       this.name = name;
       this.attempts = attempts;
       this.status = status;
@@ -19,28 +19,28 @@ $(document).ready(function() {
       this.level_id = level_id;
       this.position = position;
       this.publisher = publisher;
-      this.thumbnail = thumbnail;
       this.verifier = verifier;
+      this.thumbnail = thumbnail;
       this.video = video;
     }
   }
-  
+
   let demons = [
     251,
     29,
-    new Demon("Reflective", 7108, "Completed", "Mojitoz & more", 78831233, "N/A", "Mojitoz", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "Vorgogne", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
-    new Demon("Reanimate", 6851, "Completed", "ilnm & more", 80335620, "N/A", "ilnm", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "Nexus", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
-    new Demon("HURRICANE", 5094, "Completed", "BIANOX & more", 6072693, "N/A", "BIANOX", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "Floppy", "https://www.youtube.com/watch?v=WQcGIY8_28c"),
-    new Demon("Napalm", "Unknown", "Completed", "Marwec & more", 65561437, "N/A", "Marwec", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "Luqualizer", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
-    new Demon("Lost Love", 6409, "Completed", "TheBlackHell", 85933508, "N/A", "TheBlackHell", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "Aespha", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
-    new Demon("troll level", 8158, "Completed", "lexycat, glitchi & lena", 76196489, "N/A", "lexycat", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "J0HNFREE", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
+    new Demon("Reflective", 7108, "Completed", "Mojitoz & more", 78831233, "N/A", "Mojitoz", "Vorgogne", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
+    new Demon("Reanimate", 6851, "Completed", "ilnm & more", 80335620, "N/A", "ilnm", "Nexus", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
+    new Demon("HURRICANE", 5094, "Completed", "BIANOX & more", 6072693, "N/A", "BIANOX", "Floppy", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=WQcGIY8_28c"),
+    new Demon("Napalm", "Unknown", "Completed", "Marwec & more", 65561437, "N/A", "Marwec", "Luqualizer", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
+    new Demon("Lost Love", 6409, "Completed", "TheBlackHell", 85933508, "N/A", "TheBlackHell", "Aespha", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
+    new Demon("troll level", 8158, "Completed", "lexycat, glitchi & lena", 76196489, "N/A", "lexycat", "J0HNFREE", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
     190,
-    new Demon("Precipitance", 6332, "Completed", "Extravagon", 60197839, "N/A", "Extravagon", "http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "Extravagon", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
-    new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "neigefeu", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
+    new Demon("Precipitance", 6332, "Completed", "Extravagon", 60197839, "N/A", "Extravagon", "Extravagon", "http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
+    new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
   ];
   
   let upcomingDemons = [
-    new Demon("SorryForPartyRocking", 0, "Upcoming", "awesomeme360", 86263198, "N/A", "awesomeme360", "http://i.ytimg.com/vi/cAI5rojSjTM/mqdefault.jpg", "awesomeme360", "https://www.youtube.com/watch?v=cAI5rojSjTM")
+    new Demon("I NEVER DREAM", 0, "Upcoming", "skywalker14", 76931927, "N/A", "skywalker14", "Santiachu", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=9bumyVCkPiw")
   ];
   
   async function list() {
@@ -62,8 +62,8 @@ $(document).ready(function() {
               data.data.level_id,
               data.data.position,
               data.data.publisher.name,
-              data.data.thumbnail,
               data.data.verifier.name,
+              data.data.thumbnail,
               data.data.video
             );
             // Clean up the data: replace objects/arrays in creators, add attempt values
@@ -128,8 +128,8 @@ $(document).ready(function() {
               data.data.level_id,
               data.data.position,
               data.data.publisher.name,
-              data.data.thumbnail,
               data.data.verifier.name,
+              data.data.thumbnail,
               data.data.video
             );
             // Clean up the data: replace objects/arrays in creators
@@ -158,7 +158,7 @@ $(document).ready(function() {
             <h1>${currentDemon.name}</h1>
             <h2>By ${currentDemon.creators}</h2>
             <p>Demon list position: ${currentDemon.position}</p>
-            <p>Projected list placement: <b>2</b></p>
+            <p>Projected list placement: <b>8</b></p>
           </div>`);
       }
     });
