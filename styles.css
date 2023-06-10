@@ -16,10 +16,19 @@ main button {
     background-color: rgb(242, 224, 201);
     padding: 15px;
     font-size: 1.3em;
-    width: 45%;
+    width: 30%;
 }
 main button:hover {
     background-color: rgb(232, 211, 183);
+}
+div h1 {
+    font-size: 4em;
+}
+#ratings p {
+    margin: auto;
+    margin-bottom: 1%;
+    font-size: 2em;
+    width: 80%;
 }
 .container {
     margin: 3% auto;

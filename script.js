@@ -13,7 +13,7 @@ class Demon {
   }
 }
 
-class DemonRanking {
+class DemonRating {
   constructor(rank, name, enjoyment, gp, deco, song, notes=null) {
     this.rank = rank; // rank will need to change as the list updates
     this.name = name;
@@ -42,38 +42,108 @@ let upcomingDemons = [
   69
 ];
 
-let demonRankings = [
-  new DemonRanking(1, "Prismatic Haze", 9.5, 9.5, 8, 8, "Current hardest and current favorite extreme. Always try to play GOOD LEVELS for your hardests!!!"),
-  new DemonRanking(2, "Triple Six", 9, 8, 10, 4, 2, "Incredible memory level. Strong epilepsy warning."),
-  new DemonRanking(3, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
-  new DemonRanking(4, "Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
-  new DemonRanking(5, "HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
-  new DemonRanking(6, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
-  new DemonRanking(7, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level. I know "),
-  new DemonRanking(8, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
-  new DemonRanking(9, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
-  new DemonRanking(10, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
-  new DemonRanking(11, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
+let demonRatings = [
+  new DemonRating(1, "Prismatic Haze", 9.5, 9.5, 8, 8, "Current hardest and current favorite extreme. Always try to play GOOD LEVELS for your hardests!!!"),
+  new DemonRating(2, "Triple Six", 9, 8, 10, 4, "Incredible memory level. Strong epilepsy warning."),
+  new DemonRating(3, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
+  new DemonRating(4, "Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
+  new DemonRating(5, "HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
+  new DemonRating(6, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
+  new DemonRating(7, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level. I know "),
+  new DemonRating(8, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
+  new DemonRating(9, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
+  new DemonRating(10, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
+  new DemonRating(11, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ]
 
-function generateColorCode(number) {
+function generateColorCode(num) {
   let hex;
-  switch (number) {
+  switch (num) {
     case 10:
       hex = "33FF00";
       break;
+    case 9.5: 
+      hex = "4CFF00";
+      break;
+    case 9: 
+      hex = "66FF00";
+      break;
+    case 8.5:
+      hex = "7FFF00";
+      break;
+    case 8:
+      hex = "99FF00";
+      break;
+    case 7.5:
+      hex = "B2FF00";
+      break;
+    case 7:
+      hex = "CCFF00";
+      break;
+    case 6.5:
+      hex = "E5FF00";
+      break;
+    case 6:
+      hex = "FFFF00";
+      break;
+    case 5.5:
+      hex = "FFE600";
+      break;
+    case 5:
+      hex = "FFCC00";
+      break;
+    case 4.5:
+      hex = "FFB300";
+      break;
+    case 4:
+      hex = "FF9900";
+      break;
+    case 3.5:
+      hex = "FF8000";
+      break;
+    case 3:
+      hex = "FF6600";
+      break;
+    case 2.5:
+      hex = "FF4D00";
+      break;
+    case 2:
+      hex = "FF3300";
+      break;
+    case 1.5:
+      hex = "FF1A00";
+      break;
+    case 1:
+      hex = "FF0000";
+      break;
+    case 0.5:
+      hex = "E60000";
+      break;
+    case 0:
+      hex = "CC0000";
+      break;
+    default:
+      hex = "FFFFFF";
   }
+  return hex;
 }
 
 $(document).ready(function() {
   $(function() {
     $("#list-button").click(function() {
       $("#list").show();
-      $("#ratings").hide()
+      $("#ratings").hide();
+      $("#todo").hide();
     });
     $("#ratings-button").click(function() {
       $("#ratings").show();
       $("#list").hide();
+      $("#todo").hide();
+    })
+    $("#todo-button").click(function() {
+      $("#todo").show();
+      $("#list").hide();
+      $("#ratings").hide();
     })
   });
   
@@ -198,8 +268,18 @@ $(document).ready(function() {
   }
   
   function ratings() {
-    // show the demons and their ratings
     // probably order highest to lowest? or most recent? or add an option to reorder?
+    for (let demon of demonRatings) {
+      $("#ratings").append(`
+      <div class="demon">
+        <h1>${demon.name}</h1>
+        <p style="background-color:#${generateColorCode(demon.enjoyment)};">Enjoyment: ${demon.enjoyment} / 10</p>
+        <p style="background-color:#${generateColorCode(demon.gp)};">Gameplay: ${demon.gp} / 10</p>
+        <p style="background-color:#${generateColorCode(demon.deco)};">Decoration: ${demon.deco} / 10</p>
+        <p style="background-color:#${generateColorCode(demon.song)};">Song: ${demon.song} / 10</p>
+        <p>${demon.notes}</p>
+      `)
+    }
   }
   
   list();
