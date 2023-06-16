@@ -25,6 +25,14 @@ class DemonRating {
   }
 }
 
+class ToDo {
+  constructor(name, reason, excitement=1) {
+    this.name = name;
+    this.reason = reason;
+    this.excitement = excitement;
+  }
+}
+
 let demons = [
   69,
   251,
@@ -55,7 +63,37 @@ let demonRatings = [
   new DemonRating(10, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
   new DemonRating(11, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
   new DemonRating(12, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
-]
+];
+
+let toDoList = [
+  new ToDo("I NEVER DREAM", "Very good-looking level with strange yet fun gameplay. Currently taking a break from it, expect to see it on the list soon ;)"),
+  new ToDo("Reverie", "First of the Ocular Miracle series. I want to beat Ocular Miracle so naturally I want to beat this. Ignore the fact that this is insane demon."),
+  new ToDo("Faith", "Second chapter of Ocular Miracle. Same reason as Reverie, except this one actually is extreme demon."),
+  new ToDo("Diligence", "Final level of the Ocular Miracle series. Same reason as Faith."),
+  new ToDo("Crowd Control", "Seems fun? I don't know, I have to beat this no matter what so I may as well put this here before I beat it"),
+  new ToDo("Digital Disarray", "Originally added because it was the last Platinum level. It was moved to Sapphire, but I still want to do it because it looks pretty fun."),
+  new ToDo("Concaved Memories", "First Sapphire level and I heard it was good? Not really sure about this one"),
+  new ToDo("Agen Wida", "Really cool-looking level that I would do ASAP if it wasn't for the insane wave chokepoint in the middle.", 3),
+  new ToDo("BROWNOIX", "Sapphire level that looks like a ton of fun, plus will help with dual skill because the duals are really hard.", 2),
+  new ToDo("Fellow Phobia", "Omori XXL level. Looks super cool. I promise I will play omori soon I promise", 2),
+  new ToDo("KINGSLAYER", "Nice decoration and a cool song. I honestly forget why I put this here but it must have been for a good reason"),
+  new ToDo("U235", "I'm told this is one of the most fun extreme demons out there. Hopefully that's true."),
+  new ToDo("Glide", "Really good song and decoration. I'm concerned about the balancing but it should be fine. <sup>we used to glide</sup>"),
+  new ToDo("Maybe Possibly Thing", "Funny memory level. I like memory and this looks like a good one!"),
+  new ToDo("SorryForPartyRocking", "Really good all around. Currently taking a break from this as well. I'll probably beat it later.", 2),
+  new ToDo("cave of heart", "Looks like a cool memory level. I don't know too much about this one since I just watched a video of it once"),
+  new ToDo("Motorbreath", "Metallica song"),
+  new ToDo("Quaoar", "I actually wanted to do this for my first extreme because it looked so good. Good thing I did NOT do that."),
+  new ToDo("Blade of Justice", "I've heard from everyone that this is the best-aged extreme ever, and the practice runs I've done definitely agree.", 2),
+  new ToDo("Overtime", "Really fun level with a very nostalgic song. Thanks mr123j for the recommendation"),
+  new ToDo("Faded Dream", "Absolutely mesmerizing memory level. Just stunning. I hope the gameplay is as good as the decoration", 2),
+  new ToDo("Boogie", "I'm pretty sure I put this in just because it's XXL. I don't remember why this is here. Help me"),
+  new ToDo("SPEEDRUN", "Banger song, and the gameplay looks really fun too."),
+  new ToDo("The Sulphur Sea", "One of the most incredible-looking levels I've ever seen. Plus this gets bonus points for Terraria."),
+  new ToDo("RASH", "I've been repeatedly recommended this since I started beating extremes, so here it is. I don't know if I'll ever actually do this."),
+  new ToDo("Worse Trip", "Very trippy memory level. Looks like a lot of fun.", 3),
+  new ToDo("Black Blizzard", "VERY good-looking level with an extremely fun drop. The predrop is considerably less fun.", 3)
+];
 
 function generateColorCode(num) {
   let hex;
