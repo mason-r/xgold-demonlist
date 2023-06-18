@@ -47,7 +47,9 @@ let demons = [
   new Demon("Precipitance", 6332, "Completed", "Extravagon", 60197839, "N/A", "Extravagon", "Extravagon", "http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
   new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
 ];
-let upcomingDemons = [];
+let upcomingDemons = [
+  new Demon("Crowd Control", null, "Upcoming", "Deadlox & more", 69491632, "N/A", "Deadlox", "xander", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=-q0iBUZti9s")
+];
 
 let demonRatings = [
   new DemonRating(1, "Bloodbath", 5, 4, 7, 7.5, "Current hardest and former top 1. Fluked from 52, by far my best fluke to date. This level is very annoyingly balanced, with some parts being \
@@ -304,7 +306,7 @@ $(document).ready(function() {
               <h1>${currentDemon.name}</h1>
               <h2>By ${currentDemon.creators}</h2>
               <p>Demon list position: ${currentDemon.position}</p>
-              <p>Projected list placement: <b>1</b></p>
+              <p>Projected list placement: <b>Unknown</b></p>
             </div>`);
         }
       });
