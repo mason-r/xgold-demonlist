@@ -37,6 +37,7 @@ let demons = [
   69,
   251,
   29,
+  new Demon("BROWNOIX", 8084, "Completed", "ArtaxFerSarh & more", 82148336, "N/A", "ArtaxFerSarh", "exerity", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=nnJuOHHseaE"),
   new Demon("Reflective", 7108, "Completed", "Mojitoz & more", 78831233, "N/A", "Mojitoz", "Vorgogne", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
   new Demon("Reanimate", 6851, "Completed", "ilnm & more", 80335620, "N/A", "ilnm", "Nexus", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
   new Demon("HURRICANE", 5094, "Completed", "BIANOX & more", 6072693, "N/A", "BIANOX", "Floppy", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=WQcGIY8_28c"),
@@ -50,7 +51,7 @@ let demons = [
   new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
 ];
 let upcomingDemons = [
-  new Demon("BROWNOIX", null, "Upcoming", "ArtaxFerSarh & more", 82148336, "N/A", "ArtaxFerSarh", "exerity", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=nnJuOHHseaE")
+  new Demon("Dismal Duststorm", 0, "Upcoming", "Multiverse55", 89201076, "N/A", "Multiverse55", "Multiverse55", "http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=l-hYBdrM0bc")
 ];
 
 let demonRatings = [
@@ -58,17 +59,18 @@ let demonRatings = [
     WAY harder than others."),
   new DemonRating(2, "Prismatic Haze", 9.5, 9.5, 8, 8, "Former hardest and current favorite extreme. Always try to play GOOD LEVELS for your hardests!!!"),
   new DemonRating(3, "Triple Six", 9, 8, 10, 4, "Incredible memory level. Strong epilepsy warning."),
-  new DemonRating(4, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
-  new DemonRating(5, "Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
-  new DemonRating(6, "HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
-  new DemonRating(7, "I NEVER DREAM", 7, 7.5, 10, 7, "Absolutely gorgeous level with very strange yet fun gameplay. The first half is WAY harder than the second."),
-  new DemonRating(8, "Crowd Control", 6, 6.5, 7, 5.5, "Decent level significantly impacted by its heavy chokepoints. Kind of a chore to play from anywhere, but especially from 0."),
-  new DemonRating(9, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
-  new DemonRating(10, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
-  new DemonRating(11, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
-  new DemonRating(12, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
-  new DemonRating(13, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
-  new DemonRating(14, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
+  new DemonRating(4, "BROWNOIX", 8.5, 9, 8, 5.5, "Very fun level with super cool dual gameplay. The first half is quite heavy."),
+  new DemonRating(5, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
+  new DemonRating(6, "Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
+  new DemonRating(7, "HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
+  new DemonRating(8, "I NEVER DREAM", 7, 7.5, 10, 7, "Absolutely gorgeous level with very strange yet fun gameplay. The first half is WAY harder than the second."),
+  new DemonRating(9, "Crowd Control", 6, 6.5, 7, 5.5, "Decent level significantly impacted by its heavy chokepoints. Kind of a chore to play from anywhere, but especially from 0."),
+  new DemonRating(10, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
+  new DemonRating(11, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
+  new DemonRating(12, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
+  new DemonRating(13, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
+  new DemonRating(14, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
+  new DemonRating(15, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ];
 
 let toDoList = [
@@ -358,7 +360,7 @@ $(document).ready(function() {
               <h1>${currentDemon.name}</h1>
               <h2>By ${currentDemon.creators}</h2>
               <p>Demon list position: ${currentDemon.position}</p>
-              <p>Projected list placement: <b>4</b></p>
+              <p>Projected list placement: <b>Unknown</b></p>
             </div>`);
         }
       });
