@@ -44,6 +44,7 @@ let demons = [
   new Demon("I NEVER DREAM", 3948, "Completed", "skywalker14", 76931927, "N/A", "skywalker14", "Santiachu", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=9bumyVCkPiw"),
   new Demon("Crowd Control", 4909, "Completed", "Deadlox & more", 69491632, "N/A", "Deadlox", "xander", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=-q0iBUZti9s"),
   new Demon("Napalm", "Unknown", "Completed", "Marwec & more", 65561437, "N/A", "Marwec", "Luqualizer", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
+  new Demon("Dismal Duststorm", 3425, "Completed", "Multiverse55", 89201076, "N/A", "Multiverse55", "Multiverse55", "http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=l-hYBdrM0bc"),
   new Demon("Lost Love", 6409, "Completed", "TheBlackHell", 85933508, "N/A", "TheBlackHell", "Aespha", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
   new Demon("troll level", 8158, "Completed", "lexycat, glitchi & lena", 76196489, "N/A", "lexycat", "J0HNFREE", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
   190,
@@ -51,7 +52,7 @@ let demons = [
   new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
 ];
 let upcomingDemons = [
-  new Demon("Dismal Duststorm", 0, "Upcoming", "Multiverse55", 89201076, "N/A", "Multiverse55", "Multiverse55", "http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=l-hYBdrM0bc")
+  70
 ];
 
 let demonRatings = [
@@ -66,11 +67,12 @@ let demonRatings = [
   new DemonRating(8, "I NEVER DREAM", 7, 7.5, 10, 7, "Absolutely gorgeous level with very strange yet fun gameplay. The first half is WAY harder than the second."),
   new DemonRating(9, "Crowd Control", 6, 6.5, 7, 5.5, "Decent level significantly impacted by its heavy chokepoints. Kind of a chore to play from anywhere, but especially from 0."),
   new DemonRating(10, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
-  new DemonRating(11, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
-  new DemonRating(12, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
-  new DemonRating(13, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
-  new DemonRating(14, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
-  new DemonRating(15, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
+  new DemonRating(11, "Dismal Duststorm", 8, 9, 10, 8.5, "Awesome desert-themed demon with extremely good decoration. I got very unlucky, but still enjoyed the level a lot."),
+  new DemonRating(12, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
+  new DemonRating(13, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
+  new DemonRating(14, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
+  new DemonRating(15, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
+  new DemonRating(16, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ];
 
 let toDoList = [
@@ -280,6 +282,9 @@ $(document).ready(function() {
                 currentDemon.attempts = 13828;
                 currentDemon.creators = "Riot & more";
                 break;
+              case "Blade of Justice":
+                currentDemon.creators = "Manix648 & Lazerblitz";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -334,8 +339,8 @@ $(document).ready(function() {
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "Carcano":
-                currentDemon.creators = "Asuith & TomsoN";
+                case "Blade of Justice":
+                currentDemon.creators = "Manix648 & Lazerblitz";
                 break;
               }
               resolve(currentDemon);
@@ -360,7 +365,7 @@ $(document).ready(function() {
               <h1>${currentDemon.name}</h1>
               <h2>By ${currentDemon.creators}</h2>
               <p>Demon list position: ${currentDemon.position}</p>
-              <p>Projected list placement: <b>Unknown</b></p>
+              <p>Projected list placement: <b>1-2</b></p>
             </div>`);
         }
       });
