@@ -43,8 +43,13 @@ div h1 {
 }
 .demon img {
     float: left;
-    margin: 3% 2%;
+    width: 27%;
+    margin: 2%;
 }
 .demon h1 {
     margin: 3% auto;
+}
+.demon-rating {
+    width: 45%;
+    font-size: 80%;
 }
