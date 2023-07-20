@@ -49,7 +49,29 @@ div h1 {
 .demon h1 {
     margin: 3% auto;
 }
+#ratings-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .demon-rating {
-    width: 45%;
+    flex-basis: 33%;
     font-size: 80%;
+    box-sizing: border-box;
+}
+#todo-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#todo-container h1 {
+    font-weight: normal;
+}
+#todo-container p {
+    font-size: 1.5em;
+}
+.demon-todo {
+    padding: 1%;
+    flex-basis: 33%;
+    box-sizing: border-box;
 }

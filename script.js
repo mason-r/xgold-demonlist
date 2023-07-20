@@ -60,7 +60,7 @@ let demonRatings = [
   new DemonRating(1, "Bloodbath", 5, 4, 7, 7.5, "Current hardest and former top 1. Fluked from 52%, by far my best fluke to date. This level is very annoyingly balanced, with some parts being \
     WAY harder than others."),
   new DemonRating(2, "Prismatic Haze", 9.5, 9.5, 8, 8, "Former hardest extreme demon. Always try to play GOOD LEVELS for your hardests!!!"),
-  new DemonRating(3, "Triple Six", 9, 8, 10, 4, "Incredible memory level. Strong epilepsy warning."),
+  new DemonRating(3, "Triple Six", 9, 8, 10, 6, "Incredible memory level. Strong epilepsy warning."),
   new DemonRating(4, "U235", 7.5, 9, 8, 6.5, "I raced this with 8 people and placed 4th! Very fun level, though the first half gets somewhat annoying after too long."),
   new DemonRating(5, "BROWNOIX", 8.5, 9, 8, 5.5, "Very fun level with super cool dual gameplay. The first half is quite heavy."),
   new DemonRating(6, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
@@ -79,17 +79,14 @@ let demonRatings = [
 
 let toDoList = [
   new ToDo("Cat Planet", "I tried this level and liked it, then decided to do Retention instead. I'll come back to this eventually."),
-  new ToDo("Reverie", "First of the Ocular Miracle series. I want to beat Ocular Miracle so naturally I want to beat this. Ignore the fact that this is insane demon."),
+  new ToDo("Reverie", "First of the Ocular Miracle series. I want to beat Ocular Miracle, so naturally I want to beat this."),
   new ToDo("Faith", "Second chapter of Ocular Miracle. Same reason as Reverie, except this one actually is extreme demon."),
   new ToDo("Diligence", "Final level of the Ocular Miracle series. Same reason as Faith."),
-  new ToDo("Crowd Control", "Seems fun? I don't know, I have to beat this no matter what so I may as well put this here before I beat it"),
   new ToDo("Digital Disarray", "Originally added because it was the last Platinum level. It was moved to Sapphire, but I still want to do it because it looks pretty fun."),
   new ToDo("Concaved Memories", "First Sapphire level and I heard it was good? Not really sure about this one"),
   new ToDo("Agen Wida", "Really cool-looking level that I would do ASAP if it wasn't for the insane wave chokepoint in the middle.", 3),
-  new ToDo("BROWNOIX", "Sapphire level that looks like a ton of fun, plus will help with dual skill because the duals are really hard.", 2),
   new ToDo("Fellow Phobia", "Omori XXL level. Looks super cool. I promise I will play omori soon I promise", 2),
   new ToDo("KINGSLAYER", "Nice decoration and a cool song. I honestly forget why I put this here but it must have been for a good reason"),
-  new ToDo("U235", "I'm told this is one of the most fun extreme demons out there. Hopefully that's true."),
   new ToDo("Glide", "Really good song and decoration. I'm concerned about the balancing, but it should be fine. <sup>we used to glide</sup>"), // among the fireflies
   new ToDo("Maybe Possibly Thing", "Funny memory level. I like memory and this looks like a good one!"),
   new ToDo("SorryForPartyRocking", "Really good all around. Currently taking a break from this as well. I'll probably beat it later.", 2),
@@ -306,7 +303,7 @@ $(document).ready(function() {
       if (currentDemon) {
         $("#list-container").append(`
           <div class="demon">
-            <a href=${currentDemon.video} target="_blank"><img src=${currentDemon.thumbnail}></a>
+            <a href=${currentDemon.video} target="_blank"><img src=${currentDemon.thumbnail} alt="${currentDemon.name}"></a>
             <h1>#${demonCounter}: ${currentDemon.name}</h1>
             <h2>By ${currentDemon.creators}</h2>
             <p>Demon list position: ${currentDemon.position}</p>
@@ -382,7 +379,7 @@ $(document).ready(function() {
     for (let demon of demonRatings) {
       avg = (demon.enjoyment + demon.gp + demon.deco + demon.song)/4;
       avgColor = generateColorCode(averageRating(demon));
-      $("#ratings").append(`
+      $("#ratings-container").append(`
       <div class="demon demon-rating">
         <h1>${demon.name}</h1>
         <p style="background-color:#${avgColor}; padding:1.5% 0%;"><b>Overall: ${avg} / 10</b></p>
@@ -391,11 +388,42 @@ $(document).ready(function() {
         <p style="background-color:#${generateColorCode(demon.deco)};">Decoration: ${demon.deco} / 10</p>
         <p style="background-color:#${generateColorCode(demon.song)};">Song: ${demon.song} / 10</p>
         <p>${demon.notes}</p>
-      `)
+      </div>`)
+    }
+  }
+
+  function toDo() {
+    for (let demon of toDoList) {
+      let name;
+      switch (demon.excitement) {
+        case 0:
+          name = `<h1 style="color:red;">${demon.name}</h1>`;
+          break;
+        case 1:
+          name = `<h1>${demon.name}</h1>`;
+          break;
+        case 2:
+          name = `<h1><i>${demon.name}</i></h1>`;
+          break;
+        case 3:
+          name = `<h1><b>${demon.name}</b></h1>`;
+          break;
+        case 4:
+          name = `<h1><i><b>${demon.name}</b></i></h1>`;
+          break;
+        default:
+          name = `<h1>${demon.name}</h1>`;
+      }
+      $("#todo-container").append(`
+        <div class="demon demon-todo">
+          <h1>${name}</h1>
+          <p>${demon.reason}</p>
+        </div>`)
     }
   }
   
   list();
   upcomingList();
   ratings();
+  toDo();
 })
