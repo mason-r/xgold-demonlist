@@ -416,7 +416,7 @@ $(document).ready(function() {
       }
       $("#todo-container").append(`
         <div class="demon demon-todo">
-          <h1>${name}</h1>
+          ${name}
           <p>${demon.reason}</p>
         </div>`)
     }
