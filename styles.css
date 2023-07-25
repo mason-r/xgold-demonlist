@@ -34,14 +34,16 @@ div h1 {
     margin: 3% auto;
 }
 .demon {
-    display: flex;
-    justify-content: space-between;
     background-color: rgb(255, 246, 235);
     border: 4px solid rgb(190, 139, 71);
     border-radius: 10px;
     width: 60%;
     height: fit-content;
     margin: 20px auto;
+}
+#list .demon {
+    display: flex;
+    justify-content: space-between;
 }
 .demon h1 {
     margin: 3% auto;
