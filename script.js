@@ -1,13 +1,10 @@
 class Demon {
-  constructor(name, attempts, status, creators, level_id, position, publisher, verifier, thumbnail, video) {
+  constructor(name, date, attempts, creators, position, thumbnail, video) {
     this.name = name;
+    this.date = date;
     this.attempts = attempts;
-    this.status = status;
     this.creators = creators;
-    this.level_id = level_id;
     this.position = position;
-    this.publisher = publisher;
-    this.verifier = verifier;
     this.thumbnail = thumbnail;
     this.video = video;
   }
@@ -34,47 +31,49 @@ class ToDo {
 }
 
 let demons = [
+  70,
   69,
   251,
   29,
-  new Demon("U235", 8249, "Completed", "oleki", 83357887, "N/A", "oleki", "WSCKR", "http://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=eGwXAJej5WU"),
-  new Demon("BROWNOIX", 8084, "Completed", "ArtaxFerSarh & more", 82148336, "N/A", "ArtaxFerSarh", "exerity", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=nnJuOHHseaE"),
-  new Demon("Reflective", 7108, "Completed", "Mojitoz & more", 78831233, "N/A", "Mojitoz", "Vorgogne", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
-  new Demon("Reanimate", 6851, "Completed", "ilnm & more", 80335620, "N/A", "ilnm", "Nexus", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
-  new Demon("HURRICANE", 5094, "Completed", "BIANOX & more", 6072693, "N/A", "BIANOX", "Floppy", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=WQcGIY8_28c"),
-  new Demon("I NEVER DREAM", 3948, "Completed", "skywalker14", 76931927, "N/A", "skywalker14", "Santiachu", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=9bumyVCkPiw"),
-  new Demon("Crowd Control", 4909, "Completed", "Deadlox & more", 69491632, "N/A", "Deadlox", "xander", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=-q0iBUZti9s"),
-  new Demon("Napalm", "Unknown", "Completed", "Marwec & more", 65561437, "N/A", "Marwec", "Luqualizer", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
-  new Demon("Dismal Duststorm", 3425, "Completed", "Multiverse55", 89201076, "N/A", "Multiverse55", "Multiverse55", "http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=l-hYBdrM0bc"),
-  new Demon("Lost Love", 6409, "Completed", "TheBlackHell", 85933508, "N/A", "TheBlackHell", "Aespha", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
-  new Demon("troll level", 8158, "Completed", "lexycat, glitchi & lena", 76196489, "N/A", "lexycat", "J0HNFREE", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
+  new Demon("U235", "7/15/2023", 8249, "oleki", "N/A","http://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=eGwXAJej5WU"),
+  new Demon("BROWNOIX", "7/1/2023", 8084, "ArtaxFerSarh & more", "N/A", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=nnJuOHHseaE"),
+  new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
+  new Demon("Reanimate", "1/18/20023", 6851, "ilnm & more", "N/A", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
+  new Demon("HURRICANE", "5/4/2023", 5094, "BIANOX & more", "N/A", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=WQcGIY8_28c"),
+  new Demon("I NEVER DREAM", "6/25/2023", 3948, "skywalker14", "N/A", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=9bumyVCkPiw"),
+  new Demon("Crowd Control", "6/22/2023", 4909, "Deadlox & more", "N/A", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=-q0iBUZti9s"),
+  new Demon("Napalm", "3/6/2023", "Unknown", "Marwec & more", "N/A", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
+  new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=l-hYBdrM0bc"),
+  new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
+  new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
   190,
-  new Demon("Precipitance", 6332, "Completed", "Extravagon", 60197839, "N/A", "Extravagon", "Extravagon", "http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
-  new Demon("Acu", 4026, "Completed", "neigefeu", 61079355, "N/A", "neigefeu", "neigefeu", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
+  new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
+  new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
 ];
 let upcomingDemons = [
-  70
+  new Demon("moment", "7/24/2023", 0, "lexycat & icedcave", "N/A", "http://i.ytimg.com/vi/bLfKsN4NCNY/mqdefault.jpg", "https://www.youtube.com/watch?v=bLfKsN4NCNY")
 ];
 
 let demonRatings = [
-  new DemonRating(1, "Bloodbath", 5, 4, 7, 7.5, "Current hardest and former top 1. Fluked from 52%, by far my best fluke to date. This level is very annoyingly balanced, with some parts being \
+  new DemonRating(1, "Blade of Justice", 10, 9.5, 7.5, 7.5, "Current hardest extreme. This is the most fun I have ever had with a level. This is also definitely my favorite hardest so far."),
+  new DemonRating(2, "Bloodbath", 5, 4, 7, 7.5, "Former hardest and former top 1. Fluked from 52%, by far my best fluke to date. This level is very annoyingly balanced, with some parts being \
     WAY harder than others."),
-  new DemonRating(2, "Prismatic Haze", 9.5, 9.5, 8, 8, "Former hardest extreme demon. Always try to play GOOD LEVELS for your hardests!!!"),
-  new DemonRating(3, "Triple Six", 9, 8, 10, 6, "Incredible memory level. Strong epilepsy warning."),
-  new DemonRating(4, "U235", 7.5, 9, 8, 6.5, "I raced this with 8 people and placed 4th! Very fun level, though the first half gets somewhat annoying after too long."),
-  new DemonRating(5, "BROWNOIX", 8.5, 9, 8, 5.5, "Very fun level with super cool dual gameplay. The first half is quite heavy."),
-  new DemonRating(6, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
-  new DemonRating(7, "Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
-  new DemonRating(8, "HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
-  new DemonRating(9, "I NEVER DREAM", 7, 7.5, 10, 7, "Absolutely gorgeous level with very strange yet fun gameplay. The first half is WAY harder than the second."),
-  new DemonRating(10, "Crowd Control", 6, 6.5, 7, 5.5, "Decent level significantly impacted by its heavy chokepoints. Kind of a chore to play from anywhere, but especially from 0."),
-  new DemonRating(11, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
-  new DemonRating(12, "Dismal Duststorm", 8, 9, 10, 8.5, "Awesome desert-themed demon with extremely good decoration. I got very unlucky, but still enjoyed the level a lot."),
-  new DemonRating(13, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
-  new DemonRating(14, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
-  new DemonRating(15, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
-  new DemonRating(16, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
-  new DemonRating(17, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
+  new DemonRating(3, "Prismatic Haze", 9.5, 9.5, 8, 8, "Former hardest extreme demon. Always try to play GOOD LEVELS for your hardests!!!"),
+  new DemonRating(4, "Triple Six", 9, 8, 10, 6, "Incredible memory level. Strong epilepsy warning."),
+  new DemonRating(5, "U235", 7.5, 9, 8, 6.5, "I raced this with 8 people and placed 4th! Very fun level, though the first half gets somewhat annoying after too long."),
+  new DemonRating(6, "BROWNOIX", 8.5, 9, 8, 5.5, "Very fun level with super cool dual gameplay. The first half is quite heavy."),
+  new DemonRating(7, "Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
+  new DemonRating(8, "Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
+  new DemonRating(9, "HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
+  new DemonRating(10, "I NEVER DREAM", 7, 7.5, 10, 7, "Absolutely gorgeous level with very strange yet fun gameplay. The first half is WAY harder than the second."),
+  new DemonRating(11, "Crowd Control", 6, 6.5, 7, 5.5, "Decent level significantly impacted by its heavy chokepoints. Kind of a chore to play from anywhere, but especially from 0."),
+  new DemonRating(12, "Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
+  new DemonRating(13, "Dismal Duststorm", 8, 9, 10, 8.5, "Awesome desert-themed demon with extremely good decoration. I got very unlucky, but still enjoyed the level a lot."),
+  new DemonRating(14, "Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
+  new DemonRating(15, "troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
+  new DemonRating(16, "Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
+  new DemonRating(17, "Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
+  new DemonRating(18, "Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ];
 
 let toDoList = [
@@ -94,7 +93,6 @@ let toDoList = [
   new ToDo("Motorbreath", "This level uses a Metallica song very well. Looks like a blast to play."),
   new ToDo("troll level two", "Upcoming sequel to troll level. This looks like one of the funniest levels ever. I loved troll level, so I'll definitely adore its sequel.", 4),
   new ToDo("Quaoar", "I actually wanted to do this for my first extreme because it looked so good. Good thing I did NOT do that."),
-  new ToDo("Blade of Justice", "I've heard from everyone that this is the best-aged extreme ever, and the practice runs I've done definitely agree.", 2),
   new ToDo("Overtime", "Really fun level with a very nostalgic song. Thanks mr123j for the recommendation"),
   new ToDo("Faded Dream", "Absolutely mesmerizing memory level. Just stunning. I hope the gameplay is as good as the decoration", 2),
   new ToDo("Belloq", "Really cool-looking level with a great song and tons of music sync. I've heard the gameplay isn't as good, but hopefully everything else will make up for it."),
@@ -257,10 +255,7 @@ $(document).ready(function() {
               null,
               null,
               data.data.creators,
-              data.data.level_id,
               data.data.position,
-              data.data.publisher.name,
-              data.data.verifier.name,
               data.data.thumbnail,
               data.data.video
             );
@@ -269,21 +264,27 @@ $(document).ready(function() {
               case "Prismatic Haze":
                 currentDemon.attempts = 10557;
                 currentDemon.creators = "Cirtrax & Gizbro";
+                currentDemon.date = "4/23/2023";
                 break;
               case "Triple Six":
                 currentDemon.attempts = 10467;
                 currentDemon.creators = "Zylenox";
+                currentDemon.date = "5/18/2023";
                 break;
               case "Retention":
                 currentDemon.attempts = 6233;
                 currentDemon.creators = "WOOGI1411";
+                currentDemon.date = "5/26/2023";
                 break;
               case "Bloodbath":
                 currentDemon.attempts = 13828;
                 currentDemon.creators = "Riot & more";
+                currentDemon.date = "6/10/2023";
                 break;
               case "Blade of Justice":
+                currentDemon.attempts = 14903;
                 currentDemon.creators = "Manix648 & Lazerblitz";
+                currentDemon.date = "7/24/2023";
                 break;
             }
             resolve(currentDemon);
@@ -304,11 +305,16 @@ $(document).ready(function() {
       if (currentDemon) {
         $("#list-container").append(`
           <div class="demon">
-            <a href=${currentDemon.video} target="_blank"><img src=${currentDemon.thumbnail} alt="${currentDemon.name}"></a>
-            <h1>#${demonCounter}: ${currentDemon.name}</h1>
-            <h2>By ${currentDemon.creators}</h2>
-            <p>Demon list position: ${currentDemon.position}</p>
-            <p>Attempt count: ${currentDemon.attempts}</p>
+            <div class="demon-thumbnail">
+              <a href=${currentDemon.video} target="_blank"><img src=${currentDemon.thumbnail} alt="${currentDemon.name}"></a>
+            </div>
+            <div class="demon-info">
+              <h1>#${demonCounter}: ${currentDemon.name}</h1>
+              <h2>By ${currentDemon.creators}</h2>
+              <p>Demon list position: ${currentDemon.position}</p>
+              <p>Date completed: ${currentDemon.date}</p>
+              <p>Attempt count: ${currentDemon.attempts}</p>
+            </div>
           </div>`);
         demonCounter++;
       }
@@ -361,11 +367,16 @@ $(document).ready(function() {
         if (currentDemon) {
           $("#upcoming-container").append(`
             <div class="demon">
-              <a href=${currentDemon.video} target="_blank"><img src=${currentDemon.thumbnail}></a>
-              <h1>${currentDemon.name}</h1>
-              <h2>By ${currentDemon.creators}</h2>
-              <p>Demon list position: ${currentDemon.position}</p>
-              <p>Projected list placement: <b>1</b></p>
+              <div class="demon-thumbnail">
+                <a href=${currentDemon.video} target="_blank"><img src=${currentDemon.thumbnail}></a>
+              </div>
+              <div class="demon-info">
+                <h1>${currentDemon.name}</h1>
+                <h2>By ${currentDemon.creators}</h2>
+                <p>Demon list position: ${currentDemon.position}</p>
+                <p>Date started: ${currentDemon.date}</p>
+                <p>Projected list placement: <b>Unknown</b></p>
+              </div>
             </div>`);
         }
       });

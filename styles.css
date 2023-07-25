@@ -34,6 +34,8 @@ div h1 {
     margin: 3% auto;
 }
 .demon {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(255, 246, 235);
     border: 4px solid rgb(190, 139, 71);
     border-radius: 10px;
@@ -41,13 +43,20 @@ div h1 {
     height: fit-content;
     margin: 20px auto;
 }
-.demon img {
-    float: left;
-    width: 27%;
-    margin: 2%;
-}
 .demon h1 {
     margin: 3% auto;
+}
+.demon-thumbnail {
+    flex-basis: 40%;
+}
+.demon-thumbnail img {
+    float: left;
+    width: 70%;
+    margin: 4.5%;
+}
+.demon-info {
+    flex-basis: 60%;
+    text-align: center;
 }
 #ratings-container {
     width: 80%;
