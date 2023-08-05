@@ -144,6 +144,7 @@ let toDoList = [
   new ToDo("Kyouki", "At this point I'm starting to run out of options for harder levels. Kyouki looks pretty fun though? Maybe?"),
   new ToDo("Ashley Wave Trials", "This is probably never going to happen."),
   new ToDo("Return 0", "This level has been cancelled, but I'm leaving it here in case somehow it gets revived. A 17-minute long level is insane to me.", 2),
+  new ToDo("Flamewall", "Upcoming extreme demon, maybe in top 3-5 range? Uses a super good song and has very nice gameplay."),
   new ToDo("Ascension to Heaven", "THIS IS THE BEST LEVEL OF ALL TIME. It uses all of my favorite song ever, looks unbelievably beautiful, and plays very well. I CANNOT WAIT to beat this level.", 4),
   // new ToDo("Kaizo Trap", "I actually don't know if this level has been made public yet")
 ];
