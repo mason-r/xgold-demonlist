@@ -95,7 +95,6 @@ let toDoList = [
   new ToDo("Maybe Possibly Thing", "Funny memory level. I like memory and this looks like a good one!"),
   new ToDo("SorryForPartyRocking", "Really good all around. Currently taking a break from this as well. I'll probably beat it later.", 2),
   new ToDo("cave of heart", "Looks like a cool memory level. I don't know too much about this one since I just watched a video of it once"),
-  new ToDo("Motorbreath", "This level uses a Metallica song very well. Looks like a blast to play."),
   new ToDo("troll level two", "Upcoming sequel to troll level. This looks like one of the funniest levels ever. I loved troll level, so I'll definitely adore its sequel.", 4),
   new ToDo("Quaoar", "I actually wanted to do this for my first extreme because it looked so good. Good thing I did NOT do that."),
   new ToDo("Overtime", "Really fun level with a very nostalgic song. Thanks mr123j for the recommendation"),
