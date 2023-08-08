@@ -35,7 +35,7 @@ let demons = [
   251,
   29,
   new Demon("moment", "8/1/2023", 8024, "lexycat & icedcave", "N/A", "http://i.ytimg.com/vi/bLfKsN4NCNY/mqdefault.jpg", "https://www.youtube.com/watch?v=bLfKsN4NCNY"),
-  new Demon("Motorbreath", "8/6/2023", 0, "TwisterDude161", "N/A", "http://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://www.youtube.com/watch?v=R41Yj8XpMhM"),
+  new Demon("Motorbreath", "8/6/2023", 9370, "TwisterDude161", "N/A", "http://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://www.youtube.com/watch?v=R41Yj8XpMhM"),
   new Demon("U235", "7/15/2023", 8249, "oleki", "N/A","http://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=eGwXAJej5WU"),
   new Demon("BROWNOIX", "7/1/2023", 8084, "ArtaxFerSarh & more", "N/A", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=nnJuOHHseaE"),
   new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
