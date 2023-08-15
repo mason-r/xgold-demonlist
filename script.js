@@ -35,22 +35,22 @@ let demons = [
   69,
   251,
   29,
-  new Demon("moment", "8/1/2023", 8024, "lexycat & icedcave", "N/A", "http://i.ytimg.com/vi/bLfKsN4NCNY/mqdefault.jpg", "https://www.youtube.com/watch?v=bLfKsN4NCNY"),
-  new Demon("Motorbreath", "8/6/2023", 9370, "TwisterDude161", "N/A", "http://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://www.youtube.com/watch?v=R41Yj8XpMhM"),
-  new Demon("U235", "7/15/2023", 8249, "oleki", "N/A","http://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=eGwXAJej5WU"),
-  new Demon("BROWNOIX", "7/1/2023", 8084, "ArtaxFerSarh & more", "N/A", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=nnJuOHHseaE"),
-  new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=1fzhBT_7Fos"),
-  new Demon("Reanimate", "1/18/2023", 6851, "ilnm & more", "N/A", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=jk-r4_Nctes"),
-  new Demon("HURRICANE", "5/4/2023", 5094, "BIANOX & more", "N/A", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=WQcGIY8_28c"),
-  new Demon("I NEVER DREAM", "6/25/2023", 3948, "skywalker14", "N/A", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=9bumyVCkPiw"),
-  new Demon("Crowd Control", "6/22/2023", 4909, "Deadlox & more", "N/A", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=-q0iBUZti9s"),
-  new Demon("Napalm", "3/6/2023", "Unknown", "Marwec & more", "N/A", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://www.youtube.com/watch?v=ND--Ai4XVfM"),
-  new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=l-hYBdrM0bc"),
-  new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=KGh4Fe5SmXc"),
-  new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=eqYr6MLwJE4"),
+  new Demon("moment", "8/1/2023", 8024, "lexycat & icedcave", "N/A", "http://i.ytimg.com/vi/bLfKsN4NCNY/mqdefault.jpg", "https://www.youtube.com/watch?v=uURizFayTI8"),
+  new Demon("Motorbreath", "8/6/2023", 9370, "TwisterDude161", "N/A", "http://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://youtube.com/video/xFHwZ4uZK5c"),
+  new Demon("U235", "7/15/2023", 8249, "oleki", "N/A","http://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=c2fogGZbQII"),
+  new Demon("BROWNOIX", "7/1/2023", 8084, "ArtaxFerSarh & more", "N/A", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=j6oFiliI1Ds"),
+  new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=cLlibHpQQ9c"),
+  new Demon("Reanimate", "1/18/2023", 6851, "ilnm & more", "N/A", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://youtu.be/3A9K_eVj5nQ?t=1306"),
+  new Demon("HURRICANE", "5/4/2023", 5094, "BIANOX & more", "N/A", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=k3Xjceml5eM"),
+  new Demon("I NEVER DREAM", "6/25/2023", 3948, "skywalker14", "N/A", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=0e9FlAk_JXI"),
+  new Demon("Crowd Control", "6/22/2023", 4909, "Deadlox & more", "N/A", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=rMrdggRE1gM"),
+  new Demon("Napalm", "3/6/2023", "Unknown", "Marwec & more", "N/A", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://youtu.be/-ZQwUByHZ4Q?t=749"),
+  new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=61xftfDyl8E"),
+  new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=qLmpGXa_dXk&t=882s"),
+  new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=RU4BYzCgEAQ"),
   190,
-  new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=_W9xA5lqmLs"),
-  new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
+  new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
+  new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
 ];
 let upcomingDemons = [
   72
@@ -269,26 +269,31 @@ $(document).ready(function() {
             // Clean up the data: replace objects/arrays in creators, add attempt values
             switch (currentDemon.name) {
               case "Prismatic Haze":
+                currentDemon.video = "https://www.youtube.com/watch?v=Raz1oAta89k&t=1409s";
                 currentDemon.attempts = 10557;
                 currentDemon.creators = "Cirtrax & Gizbro";
                 currentDemon.date = "4/23/2023";
                 break;
               case "Triple Six":
+                currentDemon.video = "https://www.youtube.com/watch?v=9EvcVYTlplE";
                 currentDemon.attempts = 10467;
                 currentDemon.creators = "Zylenox";
                 currentDemon.date = "5/18/2023";
                 break;
               case "Retention":
+                currentDemon.video = "https://www.youtube.com/watch?v=cMRfz1ZtOm8";
                 currentDemon.attempts = 6233;
                 currentDemon.creators = "WOOGI1411";
                 currentDemon.date = "5/26/2023";
                 break;
               case "Bloodbath":
+                currentDemon.video = "https://www.youtube.com/watch?v=t8hZkgieWGw&t=1172s";
                 currentDemon.attempts = 13828;
                 currentDemon.creators = "Riot & more";
                 currentDemon.date = "6/10/2023";
                 break;
               case "Blade of Justice":
+                currentDemon.video = "https://www.youtube.com/watch?v=UKKPnjRyO3g";
                 currentDemon.attempts = 14903;
                 currentDemon.creators = "Manix648 & Lazerblitz";
                 currentDemon.date = "7/24/2023";
