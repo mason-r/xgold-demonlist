@@ -30,6 +30,7 @@ class ToDo {
 }
 
 let demons = [
+  242,
   70,
   69,
   251,
@@ -52,11 +53,13 @@ let demons = [
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=z6l74Mkoxm8")
 ];
 let upcomingDemons = [
-  242
+  72
 ];
 
 let demonRatings = [
-  new DemonRating("Blade of Justice", 10, 9.5, 7.5, 7.5, "Current hardest extreme. This is the most fun I have ever had with a level. This is also definitely my favorite hardest so far."),
+  new DemonRating("SPEEDRUN", 8.5, 9, 8, 8, "Current hardest and first Jade-tier level. This level has extremely good song representation and very nice balancing. It does have a couple weird chokepoints, \
+    but altogether it's a great level."),
+  new DemonRating("Blade of Justice", 10, 9.5, 7.5, 7.5, "Former hardest extreme. This is the most fun I have ever had with a level. This is also definitely my favorite hardest so far."),
   new DemonRating("Bloodbath", 5, 4, 7, 7.5, "Former hardest and former top 1. Fluked from 52%, by far my best fluke to date. This level is very annoyingly balanced, with some parts being \
     WAY harder than others."),
   new DemonRating("Prismatic Haze", 9.5, 9.5, 8, 8, "Former hardest extreme demon. Always try to play GOOD LEVELS for your hardests!!!"),
@@ -101,7 +104,6 @@ let toDoList = [
   new ToDo("Faded Dream", "Absolutely mesmerizing memory level. Just stunning. I hope the gameplay is as good as the decoration", 2),
   new ToDo("Belloq", "Really cool-looking level with a great song and tons of music sync. I've heard the gameplay isn't as good, but hopefully everything else will make up for it."),
   new ToDo("Boogie", "I'm pretty sure I put this in just because it's XXL. I don't remember why this is here. Help me"),
-  new ToDo("SPEEDRUN", "Banger song, and the gameplay looks really fun too."),
   new ToDo("The Sulphur Sea", "One of the most incredible-looking levels I've ever seen. Plus this gets bonus points for Terraria."),
   new ToDo("RASH", "I've been repeatedly recommended this since I started beating extremes, so here it is. I don't know if I'll ever actually do this."),
   new ToDo("Worse Trip", "Very trippy memory level. Looks like a lot of fun.", 3),
@@ -291,6 +293,11 @@ $(document).ready(function() {
                 currentDemon.creators = "Manix648 & Lazerblitz";
                 currentDemon.date = "7/24/2023";
                 break;
+              case "SPEEDRUN":
+                currentDemon.attempts = 7888;
+                currentDemon.creators = "Kaito";
+                currentDemon.date = "8/15/2023";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -347,9 +354,9 @@ $(document).ready(function() {
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "SPEEDRUN":
-                  currentDemon.creators = "Kaito";
-                  currentDemon.date = "8/7/2023";
+                case "MadMansion":
+                  currentDemon.creators = "MindCap & more";
+                  currentDemon.date = "8/16/2023";
                   break;
               }
               resolve(currentDemon);
@@ -378,7 +385,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1</b></p>
+                <p>Projected list placement: <b>2-3</b></p>
               </div>
             </div>`);
         }
