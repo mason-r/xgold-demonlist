@@ -361,7 +361,7 @@ $(document).ready(function() {
               switch (currentDemon.name) {
                 case "MadMansion":
                   currentDemon.creators = "MindCap & more";
-                  currentDemon.date = "?";
+                  currentDemon.date = "8/20/2023";
                   break;
               }
               resolve(currentDemon);
