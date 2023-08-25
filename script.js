@@ -299,6 +299,7 @@ $(document).ready(function() {
                 currentDemon.date = "7/24/2023";
                 break;
               case "SPEEDRUN":
+                currentDemon.video = "https://youtu.be/z_JXoH4lQu0";
                 currentDemon.attempts = 7888;
                 currentDemon.creators = "Kaito";
                 currentDemon.date = "8/15/2023";
