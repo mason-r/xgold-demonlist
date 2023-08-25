@@ -53,7 +53,7 @@ let demons = [
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
 ];
 let upcomingDemons = [
-  72
+  357
 ];
 
 let demonRatings = [
@@ -360,9 +360,9 @@ $(document).ready(function() {
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "MadMansion":
-                  currentDemon.creators = "MindCap & more";
-                  currentDemon.date = "8/20/2023";
+                case "Endless Dream":
+                  currentDemon.creators = "DreamTide";
+                  currentDemon.date = "8/25/2023";
                   break;
               }
               resolve(currentDemon);
