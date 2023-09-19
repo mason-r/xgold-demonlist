@@ -30,6 +30,7 @@ class ToDo {
 }
 
 let demons = [
+  357,
   242,
   70,
   69,
@@ -53,11 +54,12 @@ let demons = [
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
 ];
 let upcomingDemons = [
-  357
+  
 ];
 
 let demonRatings = [
-  new DemonRating("SPEEDRUN", 8.5, 9, 8, 8, "Current hardest and first Jade-tier level. This level has extremely good song representation and very nice balancing. It does have a couple weird chokepoints, \
+  new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Current hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
+  new DemonRating("SPEEDRUN", 8.5, 9, 8, 8, "Former hardest and first Jade-tier level. This level has extremely good song representation and very nice balancing. It does have a couple weird chokepoints, \
     but altogether it's a great level."),
   new DemonRating("Blade of Justice", 10, 9.5, 7.5, 7.5, "Former hardest extreme. This is the most fun I have ever had with a level. This is also definitely my favorite hardest so far."),
   new DemonRating("Bloodbath", 5, 4, 7, 7.5, "Former hardest and former top 1. Fluked from 52%, by far my best fluke to date. This level is very annoyingly balanced, with some parts being \
@@ -304,6 +306,12 @@ $(document).ready(function() {
                 currentDemon.creators = "Kaito";
                 currentDemon.date = "8/15/2023";
                 break;
+              case "Endless Dream":
+              // currentDemon.video = "https://youtu.be/z_JXoH4lQu0"; // update this later
+              currentDemon.attempts = 11342;
+              currentDemon.creators = "DreamTide";
+              currentDemon.date = "9/18/2023";
+              break;
             }
             resolve(currentDemon);
           }).fail(function() {
