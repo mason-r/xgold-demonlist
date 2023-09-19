@@ -307,7 +307,7 @@ $(document).ready(function() {
                 currentDemon.date = "8/15/2023";
                 break;
               case "Endless Dream":
-              // currentDemon.video = "https://youtu.be/z_JXoH4lQu0"; // update this later
+              currentDemon.video = "https://youtu.be/eTqYTVNWjA8";
               currentDemon.attempts = 11342;
               currentDemon.creators = "DreamTide";
               currentDemon.date = "9/18/2023";
