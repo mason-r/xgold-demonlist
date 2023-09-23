@@ -82,6 +82,7 @@ let demonRatings = [
   new DemonRating("Dismal Duststorm", 8, 9, 10, 8.5, "Awesome desert-themed demon with extremely good decoration. I got very unlucky, but still enjoyed the level a lot."),
   new DemonRating("Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
   new DemonRating("troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
+  new DemonRating("niwa", 6, 7, 8.5, 8.5, "Pretty fun level with some fairly annoying chokepoints, particularly the last ship (where I died three times)."),
   new DemonRating("Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
   new DemonRating("Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
   new DemonRating("Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
