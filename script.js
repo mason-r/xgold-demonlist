@@ -49,6 +49,7 @@ let demons = [
   new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=61xftfDyl8E"),
   new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=qLmpGXa_dXk&t=882s"),
   new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=RU4BYzCgEAQ"),
+  new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "http://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=1tven_pFftA"),
   190,
   new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
