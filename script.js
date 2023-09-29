@@ -55,7 +55,7 @@ let demons = [
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
 ];
 let upcomingDemons = [
-  
+  new Demon("The Sulphur Sea", "9/28/2023", 0, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=wz8XcDMDKhY")
 ];
 
 let demonRatings = [
@@ -401,7 +401,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1-2</b></p>
+                <p>Projected list placement: <b>2-3</b></p>
               </div>
             </div>`);
         }
