@@ -31,6 +31,7 @@ class ToDo {
 
 let demons = [
   357,
+  new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=wz8XcDMDKhY"),
   242,
   70,
   69,
@@ -55,11 +56,12 @@ let demons = [
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
 ];
 let upcomingDemons = [
-  new Demon("The Sulphur Sea", "9/28/2023", 0, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=wz8XcDMDKhY")
+  new Demon("Worse Trip", "10/15/2023", 0, "Loltad", "N/A", "http://i.ytimg.com/vi/zLvEwDup7gE/mqdefault.jpg", "https://www.youtube.com/watch?v=zLvEwDup7gE")
 ];
 
 let demonRatings = [
   new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Current hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
+  new DemonRating("The Sulphur Sea", 9, 9, 10, 9, "I LOVE this level so much. Calmity-themed levels never fail to blow me away, and this was absolutely no exception. the sulphur peak"),
   new DemonRating("SPEEDRUN", 8.5, 9, 8, 8, "Former hardest and first Jade-tier level. This level has extremely good song representation and very nice balancing. It does have a couple weird chokepoints, \
     but altogether it's a great level."),
   new DemonRating("Blade of Justice", 10, 9.5, 7.5, 7.5, "Former hardest extreme. This is the most fun I have ever had with a level. This is also definitely my favorite hardest so far."),
@@ -401,7 +403,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>2-3</b></p>
+                <p>Projected list placement: <b>1-2</b></p>
               </div>
             </div>`);
         }
