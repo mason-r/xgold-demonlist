@@ -31,7 +31,7 @@ class ToDo {
 
 let demons = [
   357,
-  new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=wz8XcDMDKhY"),
+  new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
   242,
   70,
   69,
@@ -50,11 +50,12 @@ let demons = [
   new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","http://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=61xftfDyl8E"),
   new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "http://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=qLmpGXa_dXk&t=882s"),
   new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "http://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=RU4BYzCgEAQ"),
-  new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "http://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=1tven_pFftA"),
+  new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "http://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=EBzDURIuDQE"),
   190,
   new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
 ];
+
 let upcomingDemons = [
   new Demon("Worse Trip", "10/15/2023", 0, "Loltad", "N/A", "http://i.ytimg.com/vi/zLvEwDup7gE/mqdefault.jpg", "https://www.youtube.com/watch?v=zLvEwDup7gE")
 ];
@@ -106,11 +107,9 @@ let toDoList = [
   new ToDo("cave of heart", "Looks like a cool memory level. I don't know too much about this one since I just watched a video of it once"),
   new ToDo("troll level two", "Upcoming sequel to troll level. This looks like one of the funniest levels ever. I loved troll level, so I'll definitely adore its sequel.", 4),
   new ToDo("Quaoar", "I actually wanted to do this for my first extreme because it looked so good. Good thing I did NOT do that."),
-  new ToDo("Overtime", "Really fun level with a very nostalgic song. Thanks mr123j for the recommendation"),
   new ToDo("Faded Dream", "Absolutely mesmerizing memory level. Just stunning. I hope the gameplay is as good as the decoration", 2),
   new ToDo("Belloq", "Really cool-looking level with a great song and tons of music sync. I've heard the gameplay isn't as good, but hopefully everything else will make up for it."),
   new ToDo("Boogie", "I'm pretty sure I put this in just because it's XXL. I don't remember why this is here. Help me"),
-  new ToDo("The Sulphur Sea", "One of the most incredible-looking levels I've ever seen. Plus this gets bonus points for Terraria."),
   new ToDo("RASH", "I've been repeatedly recommended this since I started beating extremes, so here it is. I don't know if I'll ever actually do this."),
   new ToDo("Worse Trip", "Very trippy memory level. Looks like a lot of fun.", 3),
   new ToDo("Black Blizzard", "VERY good-looking level with an extremely fun drop. The predrop is considerably less fun.", 3),
