@@ -413,7 +413,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1-2</b></p>
+                <p>Projected list placement: <b>???</b></p>
               </div>
             </div>`);
         }
