@@ -58,7 +58,8 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("CICADA3302", "11/11/2023", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
+  new Demon("troll level two", "11/21/2023", 0, "Lexy & more", "N/A", "http://i.ytimg.com/vi/j5LVu8vvxAw/mqdefault.jpg", "https://www.youtube.com/watch?v=j5LVu8vvxAw")
+  // new Demon("CICADA3302", "11/11/2023", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
 ];
 
 let demonRatings = [
@@ -413,7 +414,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>???</b></p>
+                <p>Projected list placement: <b>1-2</b></p>
               </div>
             </div>`);
         }
