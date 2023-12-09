@@ -30,6 +30,7 @@ class ToDo {
 }
 
 let demons = [
+  new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/j5LVu8vvxAw/mqdefault.jpg", "https://www.youtube.com/watch?v=j5LVu8vvxAw"),
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
@@ -58,11 +59,12 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("troll level two", "11/21/2023", 0, "Lexy & more", "N/A", "http://i.ytimg.com/vi/j5LVu8vvxAw/mqdefault.jpg", "https://www.youtube.com/watch?v=j5LVu8vvxAw")
-  // new Demon("CICADA3302", "11/11/2023", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
+  new Demon("CICADA3302", "11/11/2023 (12/8/2023)", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
 ];
 
 let demonRatings = [
+  new DemonRating("troll level two", 9, 8.5, 9, 10, "My first ever <i>unrated extreme demon</i> AND new hardest!!!!! This level is extremely fun and very silly :3 hope it gets rated soon. \
+    <br>did i mention i fluked from 63"),
   new DemonRating("Worse Trip", 6, 8, 8.5, 7, "I didn't have a super good time playing this level, but somehow I fluked from 67 which definitely helped the enjoyment. Pretty cool level"),
   new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Current hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
   new DemonRating("The Sulphur Sea", 9, 9, 10, 9, "I LOVE this level so much. Calmity-themed levels never fail to blow me away, and this was absolutely no exception. the sulphur peak"),
@@ -108,7 +110,6 @@ let toDoList = [
   new ToDo("Maybe Possibly Thing", "Funny memory level. I like memory and this looks like a good one!"),
   new ToDo("SorryForPartyRocking", "Really good all around. Currently taking a break from this as well. I'll probably beat it later.", 2),
   new ToDo("cave of heart", "Looks like a cool memory level. I don't know too much about this one since I just watched a video of it once"),
-  new ToDo("troll level two", "Upcoming sequel to troll level. This looks like one of the funniest levels ever. I loved troll level, so I'll definitely adore its sequel.", 4),
   new ToDo("Quaoar", "I actually wanted to do this for my first extreme because it looked so good. Good thing I did NOT do that."),
   new ToDo("Faded Dream", "Absolutely mesmerizing memory level. Just stunning. I hope the gameplay is as good as the decoration", 2),
   new ToDo("Belloq", "Really cool-looking level with a great song and tons of music sync. I've heard the gameplay isn't as good, but hopefully everything else will make up for it."),
@@ -165,7 +166,7 @@ let toDoList = [
   new ToDo("Ashley Wave Trials", "This is probably never going to happen."),
   new ToDo("Return 0", "This level has been cancelled, but I'm leaving it here in case somehow it gets revived. A 17-minute long level is insane to me.", 2),
   new ToDo("Flamewall", "Upcoming extreme demon, maybe in top 3-5 range? Uses a super good song and has very nice gameplay."),
-  new ToDo("Ascension to Heaven", "THIS IS THE BEST LEVEL OF ALL TIME. It uses all of my favorite song ever, looks unbelievably beautiful, and plays very well. I CANNOT WAIT to beat this level.", 4),
+  new ToDo("Ascension to Heaven", "THIS IS THE BEST LEVEL OF ALL TIME. It uses all of my favorite song ever, looks unbelievably beautiful, and (hopefully) plays very well. I CANNOT WAIT to beat this level.", 4),
   // new ToDo("Kaizo Trap", "I actually don't know if this level has been made public yet")
 ];
 
@@ -414,7 +415,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1-2</b></p>
+                <p>Projected list placement: <b>???</b></p>
               </div>
             </div>`);
         }
