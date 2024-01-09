@@ -59,14 +59,14 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("CICADA3302", "11/11/2023 (12/8/2023)", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
+  313
 ];
 
 let demonRatings = [
   new DemonRating("troll level two", 9, 8.5, 9, 10, "My first ever <i>unrated extreme demon</i> AND new hardest!!!!! This level is extremely fun and very silly :3 hope it gets rated soon. \
     <br>did i mention i fluked from 63"),
   new DemonRating("Worse Trip", 6, 8, 8.5, 7, "I didn't have a super good time playing this level, but somehow I fluked from 67 which definitely helped the enjoyment. Pretty cool level"),
-  new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Current hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
+  new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Former hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
   new DemonRating("The Sulphur Sea", 9, 9, 10, 9, "I LOVE this level so much. Calmity-themed levels never fail to blow me away, and this was absolutely no exception. the sulphur peak"),
   new DemonRating("SPEEDRUN", 8.5, 9, 8, 8, "Former hardest and first Jade-tier level. This level has extremely good song representation and very nice balancing. It does have a couple weird chokepoints, \
     but altogether it's a great level."),
@@ -118,12 +118,13 @@ let toDoList = [
   new ToDo("Black Blizzard", "VERY good-looking level with an extremely fun drop. The predrop is considerably less fun.", 3),
   new ToDo("Audio Expulsion", "Looks like it has really fun gameplay at least. Not sure about decoration or song."),
   new ToDo("Auditory Breaker", "Very cool remake of Sonic Wave. If I want to do Sonic Wave, I might do this as well."),
-  new ToDo("Black Flag", "This is really just here because it looks SO GOOD."),
-  new ToDo("Crystal", "Uses one of my favorite songs and looks like it has really fun gameplay.", 2),
+  new ToDo("Black Flag", "This is really just here because it looks SO GOOD. 2.2 optimization has helped a ton, so lag hopefully won't be nearly as much of an issue as it used to be."),
+  new ToDo("Crystal", "Uses one of my favorite songs and looks like it has really fun gameplay. Reviews are mixed, but I won't knock it till I try it.", 2),
   new ToDo("Glitzy Bozo Land", "The only unrated extreme on here. The gameplay gimmick is super cool, and I love the kaizo theme."),
   new ToDo("Ziroikabi", "Probably pretty fun? Plus it's in GDDP Emerald tier, which makes me want to do it a bit more."),
+  new ToDo("Berserk", "Very cool-looking Zylenox level. Planning on doing this one for GDDP Emerald tier. Mixed reviews on the balancing, but fun overall."),
   new ToDo("Ethereal Artifice", "Absolutely amazing level all-around. npesta has repeatedly sung its praises, and I don't think he'll be wrong about this one.", 3),
-  new ToDo("Ameliorate", "Really weird but pretty cool level. Also very long.", 2),
+  new ToDo("Ameliorate", "Really weird but pretty cool level. The weirdness is charming in a way. Also very long.", 2),
   new ToDo("ConFusion", "Apparently the best memory level ever. I like memory gameplay, so this will be worth a shot."),
   new ToDo("Night Rider", "I ADORE the design of this level throughout the entire thing. I just hope the gameplay can match it.", 2),
   new ToDo("Nightmare Chasm", "Sequel to Titan Complex. Actually easier than TC, and apparently way more fun too."),
@@ -137,25 +138,24 @@ let toDoList = [
   new ToDo("Sunset Sandstorm", "Super cool memory level that perfectly does the song justice. The predrop is half of the level, so that might get annoying."),
   new ToDo("Kuzureta", "Femboy demon"),
   new ToDo("Sonic Wave", "I want to do this purely for the nostalgia and the level's history. I know that's not a good reason, and I know I won't enjoy the level much either.", 0),
-  new ToDo("Sparkling", "Gameplay looks really cool"),
+  new ToDo("Sparkling", "Gameplay looks really cool and goes super well with the song. Looks like a blast all around."),
   new ToDo("Shutdown", "I LOVE Oli gameplay. Ulon was a total blast, and from what it looks like, this level is basically just much harder Ulon.", 2),
   new ToDo("Wasureta", "Femboy demon"),
-  new ToDo("Requiem", "Holy shit", 4),
+  new ToDo("Requiem", "HOLY SHIT", 4),
   new ToDo("Storming Summit", "Of course I have to do the only Celeste-themed level on the demon list. I LOVE CELESTE!!!!!!", 3),
   new ToDo("Kowareta", "Femboy demon"),
-  new ToDo("Coral Cave", "Good looking stuff"),
   new ToDo("Nhelv", "Extremely cool-looking memory/learny level. I really love the design of this level.", 2),
-  new ToDo("Fog", "Really cool level lol", 2),
-  new ToDo("Bloodlust", "A must-do for literally everyone."),
+  new ToDo("Fog", "Very very interesting level with a randomized memory part apparently?? I wonder how many memory levels I have on here.", 2),
+  new ToDo("Bloodlust", "A must-do for literally everyone. A rite of passage into the top tier. Et cetera"),
   new ToDo("RUTHLESS", "Absolutely gorgeous extreme demon. From what I hear, the gameplay doesn't quite get to the level that the decoration does.", 2),
-  new ToDo("Shardscapes", "Robot-only gameplay looks cool"),
+  new ToDo("Shardscapes", "Robot-only gameplay looks cool. Has a really nice atmosphere and unique gameplay."),
   new ToDo("Kinesiophobia", "woah", 3),
   new ToDo("RUST", "Very interesting gameplay and one of my favorite songs. The structuring is simple, but works surprisingly well.", 3),
-  new ToDo("Lotus Flower", "Cool duals and stuff"),
+  new ToDo("Lotus Flower", "Really cool dual gameplay. Never seen ship movements like that before. I hope this is still possible in 2.2"),
   new ToDo("Esfera", "Oddly nostalgic Korean megacollab. This level is also very long, but the gameplay looks very unique and fun."),
-  new ToDo("Kenos", "I can't have watched npesta for so long and not wanted to beat Kenos."),
+  new ToDo("Kenos", "I can't have watched npesta for so long and not wanted to beat Kenos. Honestly not sure about the level itself; this one's a big maybe."),
   new ToDo("Zodiac", "Likely the best Top 1 we've ever had. The balancing seems pretty annoying, but the gameplay looks pretty fun."),
-  new ToDo("Network", "Awesome level with the WORLD'S FIRST offsync dual...", 3),
+  new ToDo("Network", "Awesome level with the WORLD'S FIRST offsync dual... and a big ol spiral in the background.", 3),
   new ToDo("Nullscapes", "EXTREMELY good-looking sequel to Shardscapes with the same robot-only gimmicks.", 3),
   new ToDo("Verdant Landscape", "One of the best extremes ever made, according to many. I can't ignore that reputation.", 2),
   new ToDo("Oblivion", "Awesome song, good gameplay, nice decoration. I really like the gameplay style, and the song is just SO good.", 3),
@@ -246,6 +246,18 @@ function averageRating(demon) {
   return Math.round(((demon.enjoyment + demon.gp + demon.deco + demon.song)/4)*2)/2; // it does all this goofy stuff to round to the nearest 0.5 so the CSS colors will work
 }
 
+function getCreatorString(creators) {
+  let creatorName;
+  if (creators.length == 1) {
+    creatorName = creators[0].name;
+  } else if (creators.length == 2) {
+    creatorName = `${creators[0].name} & ${creators[1].name}`;
+  } else {
+    creatorName = `${creators[0].name} & more`;
+  }
+  return creatorName;
+}
+
 $(document).ready(function() {
   $(function() {
     $("#list-button").click(function() {
@@ -275,11 +287,12 @@ $(document).ready(function() {
             url: "https://pointercrate.com/api/v2/demons/" + currentItem + "/",
             method: "GET"
           }).done(function(data) {
+            let creatorName = getCreatorString(data.data.creators);
             currentDemon = new Demon(
               data.data.name,
               null,
               null,
-              data.data.creators,
+              creatorName,
               data.data.position,
               data.data.thumbnail,
               data.data.video
@@ -289,13 +302,11 @@ $(document).ready(function() {
               case "Prismatic Haze":
                 currentDemon.video = "https://www.youtube.com/watch?v=Raz1oAta89k&t=1409s";
                 currentDemon.attempts = 10557;
-                currentDemon.creators = "Cirtrax & Gizbro";
                 currentDemon.date = "4/23/2023";
                 break;
               case "Triple Six":
                 currentDemon.video = "https://www.youtube.com/watch?v=9EvcVYTlplE";
                 currentDemon.attempts = 10467;
-                currentDemon.creators = "Zylenox";
                 currentDemon.date = "5/18/2023";
                 break;
               case "Retention":
@@ -307,27 +318,23 @@ $(document).ready(function() {
               case "Bloodbath":
                 currentDemon.video = "https://www.youtube.com/watch?v=t8hZkgieWGw&t=1172s";
                 currentDemon.attempts = 13828;
-                currentDemon.creators = "Riot & more";
                 currentDemon.date = "6/10/2023";
                 break;
               case "Blade of Justice":
                 currentDemon.video = "https://www.youtube.com/watch?v=UKKPnjRyO3g";
                 currentDemon.attempts = 14903;
-                currentDemon.creators = "Manix648 & Lazerblitz";
                 currentDemon.date = "7/24/2023";
                 break;
               case "SPEEDRUN":
                 currentDemon.video = "https://youtu.be/z_JXoH4lQu0";
                 currentDemon.attempts = 7888;
-                currentDemon.creators = "Kaito";
                 currentDemon.date = "8/15/2023";
                 break;
               case "Endless Dream":
-              currentDemon.video = "https://youtu.be/eTqYTVNWjA8";
-              currentDemon.attempts = 11342;
-              currentDemon.creators = "DreamTide";
-              currentDemon.date = "9/18/2023";
-              break;
+                currentDemon.video = "https://youtu.be/eTqYTVNWjA8";
+                currentDemon.attempts = 11342;
+                currentDemon.date = "9/18/2023";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -373,20 +380,21 @@ $(document).ready(function() {
               url: "https://pointercrate.com/api/v2/demons/" + currentItem + "/",
               method: "GET"
             }).done(function(data) {
+              let creatorName = getCreatorString(data.data.creators);
               currentDemon = new Demon(
                 data.data.name,
                 null,
                 null,
-                data.data.creators,
+                creatorName,
                 data.data.position,
                 data.data.thumbnail,
                 data.data.video
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "Endless Dream":
-                  currentDemon.creators = "DreamTide";
-                  currentDemon.date = "8/25/2023";
+                case "DARKENED":
+                  currentDemon.creators = "MindCap & more";
+                  currentDemon.date = "1/04/2024";
                   break;
               }
               resolve(currentDemon);
@@ -415,7 +423,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>???</b></p>
+                <p>Projected list placement: <b>3-5</b></p>
               </div>
             </div>`);
         }
