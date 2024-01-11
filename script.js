@@ -30,7 +30,7 @@ class ToDo {
 }
 
 let demons = [
-  new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/j5LVu8vvxAw/mqdefault.jpg", "https://www.youtube.com/watch?v=j5LVu8vvxAw"),
+  new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
@@ -40,11 +40,11 @@ let demons = [
   251,
   29,
   new Demon("moment", "8/1/2023", 8024, "lexycat & icedcave", "N/A", "http://i.ytimg.com/vi/bLfKsN4NCNY/mqdefault.jpg", "https://www.youtube.com/watch?v=uURizFayTI8"),
-  new Demon("Motorbreath", "8/6/2023", 9370, "TwisterDude161", "N/A", "http://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://youtube.com/video/xFHwZ4uZK5c"),
+  new Demon("Motorbreath", "8/6/2023", 9370, "TwisterDude161", "N/A", "http://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://www.youtube.com/watch?v=xFHwZ4uZK5c"),
   new Demon("U235", "7/15/2023", 8249, "oleki", "N/A","http://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=c2fogGZbQII"),
   new Demon("BROWNOIX", "7/1/2023", 8084, "ArtaxFerSarh & more", "N/A", "http://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=j6oFiliI1Ds"),
   new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=cLlibHpQQ9c"),
-  new Demon("Reanimate", "1/18/2023", 6851, "ilnm & more", "N/A", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://youtu.be/3A9K_eVj5nQ?t=1306"),
+  new Demon("Reanimate", "1/18/2023", 6851, "ilnm & more", "N/A", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=3A9K_eVj5nQ&t=1306s"),
   new Demon("HURRICANE", "5/4/2023", 5094, "BIANOX & more", "N/A", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=k3Xjceml5eM"),
   new Demon("I NEVER DREAM", "6/25/2023", 3948, "skywalker14", "N/A", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=0e9FlAk_JXI"),
   new Demon("Crowd Control", "6/22/2023", 4909, "Deadlox & more", "N/A", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=rMrdggRE1gM"),
@@ -55,7 +55,7 @@ let demons = [
   new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "http://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=EBzDURIuDQE"),
   190,
   new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","http://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
-  new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://youtu.be/ydQ-__LqEFM?t=795")
+  new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "http://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=ydQ-__LqEFM&t=795s")
 ];
 
 let upcomingDemons = [
