@@ -34,6 +34,7 @@ let demons = [
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
+  313,
   242,
   70,
   69,
@@ -59,7 +60,7 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  313
+  new Demon("The Cellar Path", "1/13/2024", 0, "JamAttack", "N/A", "http://i.ytimg.com/vi/1pqMaspf7dU/mqdefault.jpg", "https://www.youtube.com/watch?v=1pqMaspf7dU")
 ];
 
 let demonRatings = [
@@ -68,6 +69,7 @@ let demonRatings = [
   new DemonRating("Worse Trip", 6, 8, 8.5, 7, "I didn't have a super good time playing this level, but somehow I fluked from 67 which definitely helped the enjoyment. Pretty cool level"),
   new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Former hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
   new DemonRating("The Sulphur Sea", 9, 9, 10, 9, "I LOVE this level so much. Calmity-themed levels never fail to blow me away, and this was absolutely no exception. the sulphur peak"),
+  new DemonRating("DARKENED", 5, 5, 8.5, 7.5, "One of the more annoying levels I've played. Pretty unbalanced with some random timing chokepoints scattered around."),
   new DemonRating("SPEEDRUN", 8.5, 9, 8, 8, "Former hardest and first Jade-tier level. This level has extremely good song representation and very nice balancing. It does have a couple weird chokepoints, \
     but altogether it's a great level."),
   new DemonRating("Blade of Justice", 10, 9.5, 7.5, 7.5, "Former hardest extreme. This is the most fun I have ever had with a level. This is also definitely my favorite hardest so far."),
@@ -335,6 +337,11 @@ $(document).ready(function() {
                 currentDemon.attempts = 11342;
                 currentDemon.date = "9/18/2023";
                 break;
+              case "DARKENED":
+                currentDemon.creators = "BIANOX & more";
+                currentDemon.attempts = 7118;
+                currentDemon.date = "1/13/2024";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -423,7 +430,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>3-5</b></p>
+                <p>Projected list placement: <b>1-4</b></p>
               </div>
             </div>`);
         }
