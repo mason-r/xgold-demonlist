@@ -328,16 +328,18 @@ $(document).ready(function() {
                 currentDemon.date = "7/24/2023";
                 break;
               case "SPEEDRUN":
-                currentDemon.video = "https://youtu.be/z_JXoH4lQu0";
+                currentDemon.video = "https://www.youtube.com/watch?v=z_JXoH4lQu0";
                 currentDemon.attempts = 7888;
                 currentDemon.date = "8/15/2023";
                 break;
               case "Endless Dream":
-                currentDemon.video = "https://youtu.be/eTqYTVNWjA8";
+                currentDemon.video = "https://www.youtube.com/watch?v=eTqYTVNWjA8";
                 currentDemon.attempts = 11342;
                 currentDemon.date = "9/18/2023";
                 break;
               case "DARKENED":
+                currentDemon.video = "https://www.youtube.com/watch?v=4llZUZGH4pg";
+                currentDemon.thumbnail = "http://i.ytimg.com/vi/4llZUZGH4pg/mqdefault.jpg";
                 currentDemon.creators = "BIANOX & more";
                 currentDemon.attempts = 7118;
                 currentDemon.date = "1/13/2024";
