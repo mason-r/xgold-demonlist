@@ -31,6 +31,7 @@ class ToDo {
 
 let demons = [
   new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
+  new Demon("The Cellar Path", "2/19/2024", 9927, "JamAttack", "N/A", "http://i.ytimg.com/vi/1pqMaspf7dU/mqdefault.jpg", "https://www.youtube.com/watch?v=1pqMaspf7dU"),
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
@@ -60,12 +61,14 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("The Cellar Path", "1/13/2024", 0, "JamAttack", "N/A", "http://i.ytimg.com/vi/1pqMaspf7dU/mqdefault.jpg", "https://www.youtube.com/watch?v=1pqMaspf7dU")
+  new Demon("Coolie Mazie Paloozi", "???", 0, "Akunakunn", "N/A", "http://i.ytimg.com/vi/DFvKKb0-44I/mqdefault.jpg", "https://www.youtube.com/watch?v=DFvKKb0-44I")
 ];
 
 let demonRatings = [
   new DemonRating("troll level two", 9, 8.5, 9, 10, "My first ever <i>unrated extreme demon</i> AND new hardest!!!!! This level is extremely fun and very silly :3 hope it gets rated soon. \
     <br>did i mention i fluked from 63"),
+  new DemonRating("The Cellar Path", 9, 9, 10, 8, "Absolutely fantastic level. The decoration is stunning, and the gameplay flows extremely well. The entire level is a dual, which led to \
+    some interesting physics and bugs, but surprisingly nothing was broken."),
   new DemonRating("Worse Trip", 6, 8, 8.5, 7, "I didn't have a super good time playing this level, but somehow I fluked from 67 which definitely helped the enjoyment. Pretty cool level"),
   new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Former hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
   new DemonRating("The Sulphur Sea", 9, 9, 10, 9, "I LOVE this level so much. Calmity-themed levels never fail to blow me away, and this was absolutely no exception. the sulphur peak"),
@@ -432,7 +435,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1-4</b></p>
+                <p>Projected list placement: <b>???</b></p>
               </div>
             </div>`);
         }
