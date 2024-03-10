@@ -31,7 +31,7 @@ class ToDo {
 
 let demons = [
   new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
-  new Demon("The Cellar Path", "2/19/2024", 9927, "JamAttack", "N/A", "http://i.ytimg.com/vi/1pqMaspf7dU/mqdefault.jpg", "https://www.youtube.com/watch?v=1pqMaspf7dU"),
+  new Demon("The Cellar Path", "2/19/2024", 9927, "JamAttack", "N/A", "http://i.ytimg.com/vi/FBB3nlOz62c/mqdefault.jpg", "https://www.youtube.com/watch?v=FBB3nlOz62c"),
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
@@ -61,7 +61,7 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("Coolie Mazie Paloozi", "???", 0, "Akunakunn", "N/A", "http://i.ytimg.com/vi/DFvKKb0-44I/mqdefault.jpg", "https://www.youtube.com/watch?v=DFvKKb0-44I")
+  new Demon("Coolie Mazie Paloozi", "3/4/2024", 0, "Akunakunn", "N/A", "http://i.ytimg.com/vi/DFvKKb0-44I/mqdefault.jpg", "https://www.youtube.com/watch?v=DFvKKb0-44I")
 ];
 
 let demonRatings = [
@@ -435,7 +435,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>???</b></p>
+                <p>Projected list placement: <b>3-5</b></p>
               </div>
             </div>`);
         }
