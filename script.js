@@ -33,6 +33,7 @@ let demons = [
   new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
   new Demon("The Cellar Path", "2/19/2024", 9927, "JamAttack", "N/A", "http://i.ytimg.com/vi/FBB3nlOz62c/mqdefault.jpg", "https://www.youtube.com/watch?v=FBB3nlOz62c"),
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
+  new Demon("Coolie Mazie Paloozi", "3/17/2024", 12251, "Akunakunn", "N/A", "http://i.ytimg.com/vi/DFvKKb0-44I/mqdefault.jpg", "https://www.youtube.com/watch?v=DFvKKb0-44I"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
   313,
@@ -61,7 +62,7 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("Coolie Mazie Paloozi", "3/4/2024", 0, "Akunakunn", "N/A", "http://i.ytimg.com/vi/DFvKKb0-44I/mqdefault.jpg", "https://www.youtube.com/watch?v=DFvKKb0-44I")
+  new Demon("ruber cash 22", "3/17/2024", 0, "KoKo43", "N/A", "http://i.ytimg.com/vi/656dDsNOzSk/mqdefault.jpg", "https://www.youtube.com/watch?v=656dDsNOzSk")
 ];
 
 let demonRatings = [
@@ -70,6 +71,8 @@ let demonRatings = [
   new DemonRating("The Cellar Path", 9, 9, 10, 8, "Absolutely fantastic level. The decoration is stunning, and the gameplay flows extremely well. The entire level is a dual, which led to \
     some interesting physics and bugs, but surprisingly nothing was broken."),
   new DemonRating("Worse Trip", 6, 8, 8.5, 7, "I didn't have a super good time playing this level, but somehow I fluked from 67 which definitely helped the enjoyment. Pretty cool level"),
+  new DemonRating("Coolie Mazie Paloozi", 9, 8, 8.5, 7.5, "Extremely confusing, yet surprisingly fun to learn and consistent. The only level you <i>might</i> get away with noclipping. \
+    The last 5% kinda brings it down, especially the final straightfly."),
   new DemonRating("Endless Dream", 6, 8.5, 9, 8, "Former hardest extreme! I had a pretty bad time with this one, with a worst fail of 98%, but I pulled it off! First extreme at college too."),
   new DemonRating("The Sulphur Sea", 9, 9, 10, 9, "I LOVE this level so much. Calmity-themed levels never fail to blow me away, and this was absolutely no exception. the sulphur peak"),
   new DemonRating("DARKENED", 5, 5, 8.5, 7.5, "One of the more annoying levels I've played. Pretty unbalanced with some random timing chokepoints scattered around."),
@@ -302,7 +305,7 @@ $(document).ready(function() {
               data.data.thumbnail,
               data.data.video
             );
-            // Clean up the data: replace objects/arrays in creators, add attempt values
+            // Clean up the data: replace videos, add attempts and dates
             switch (currentDemon.name) {
               case "Prismatic Haze":
                 currentDemon.video = "https://www.youtube.com/watch?v=Raz1oAta89k&t=1409s";
