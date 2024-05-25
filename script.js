@@ -30,10 +30,11 @@ class ToDo {
 }
 
 let demons = [
+  new Demon("ruber cash 22", "5/21/2024", 10676, "KoKo43", "N/A", "http://i.ytimg.com/vi/VhR1m1OolZs/mqdefault.jpg", "https://www.youtube.com/watch?v=VhR1m1OolZs"),
   new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
   new Demon("The Cellar Path", "2/19/2024", 9927, "JamAttack", "N/A", "http://i.ytimg.com/vi/FBB3nlOz62c/mqdefault.jpg", "https://www.youtube.com/watch?v=FBB3nlOz62c"),
   new Demon("Worse Trip", "11/11/2023", 9941, "Loltad", "N/A", "http://i.ytimg.com/vi/1Z5w4BXCoGk/mqdefault.jpg", "https://www.youtube.com/watch?v=1Z5w4BXCoGk"),
-  new Demon("Coolie Mazie Paloozi", "3/17/2024", 12251, "Akunakunn", "N/A", "http://i.ytimg.com/vi/DFvKKb0-44I/mqdefault.jpg", "https://www.youtube.com/watch?v=DFvKKb0-44I"),
+  new Demon("Coolie Mazie Paloozi", "3/17/2024", 12251, "Akunakunn", "N/A", "http://i.ytimg.com/vi/6fJkb8o17_M/mqdefault.jpg", "https://www.youtube.com/watch?v=6fJkb8o17_M"),
   357,
   new Demon("The Sulphur Sea", "10/15/2023", 7141, "YoReid", "N/A", "http://i.ytimg.com/vi/wz8XcDMDKhY/mqdefault.jpg", "https://www.youtube.com/watch?v=BKFRd1VvuO0"),
   313,
@@ -62,10 +63,12 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("ruber cash 22", "3/17/2024", 0, "KoKo43", "N/A", "http://i.ytimg.com/vi/656dDsNOzSk/mqdefault.jpg", "https://www.youtube.com/watch?v=656dDsNOzSk")
+  204
 ];
 
 let demonRatings = [
+  new DemonRating("ruber cash 22", 6, 6.5, 7.5, 6, "The final Jade demon. There were definitely better options (and worse ones (madmansion)), but I chose this one I guess. Pretty okay level,\
+    bizarre balancing, chokepoints, you know the drill"),
   new DemonRating("troll level two", 9, 8.5, 9, 10, "My first ever <i>unrated extreme demon</i> AND new hardest!!!!! This level is extremely fun and very silly :3 hope it gets rated soon. \
     <br>did i mention i fluked from 63"),
   new DemonRating("The Cellar Path", 9, 9, 10, 8, "Absolutely fantastic level. The decoration is stunning, and the gameplay flows extremely well. The entire level is a dual, which led to \
@@ -407,9 +410,8 @@ $(document).ready(function() {
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "DARKENED":
-                  currentDemon.creators = "MindCap & more";
-                  currentDemon.date = "1/04/2024";
+                case "Black Blizzard":
+                  currentDemon.date = "5/25/2024";
                   break;
               }
               resolve(currentDemon);
@@ -438,7 +440,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>???</b></p>
+                <p>Projected list placement: <b>1</b></p>
               </div>
             </div>`);
         }
