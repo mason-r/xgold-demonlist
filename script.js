@@ -30,6 +30,7 @@ class ToDo {
 }
 
 let demons = [
+  204,
   new Demon("ruber cash 22", "5/21/2024", 10676, "KoKo43", "N/A", "http://i.ytimg.com/vi/VhR1m1OolZs/mqdefault.jpg", "https://www.youtube.com/watch?v=VhR1m1OolZs"),
   new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "http://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
   new Demon("The Cellar Path", "2/19/2024", 9927, "JamAttack", "N/A", "http://i.ytimg.com/vi/FBB3nlOz62c/mqdefault.jpg", "https://www.youtube.com/watch?v=FBB3nlOz62c"),
@@ -63,10 +64,11 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  204
+  new Demon("CICADA3302", "idk", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
 ];
 
 let demonRatings = [
+  new DemonRating("Black Blizzard", 7.5, 8.5, 9, 9, "First emerald demon!! The drop is REALLY REALLY GOOD, the predrop is expectedly very hard. Great level though"),
   new DemonRating("ruber cash 22", 6, 6.5, 7.5, 6, "The final Jade demon. There were definitely better options (and worse ones (madmansion)), but I chose this one I guess. Pretty okay level,\
     bizarre balancing, chokepoints, you know the drill"),
   new DemonRating("troll level two", 9, 8.5, 9, 10, "My first ever <i>unrated extreme demon</i> AND new hardest!!!!! This level is extremely fun and very silly :3 hope it gets rated soon. \
@@ -117,7 +119,6 @@ let toDoList = [
   new ToDo("Agen Wida", "Really cool-looking level that I would do ASAP if it wasn't for the insane wave chokepoint in the middle.", 3),
   new ToDo("Fellow Phobia", "Omori XXL level. Looks super cool. I promise I will play omori soon I promise", 2),
   new ToDo("KINGSLAYER", "Nice decoration and a cool song. I honestly forget why I put this here but it must have been for a good reason"),
-  new ToDo("Glide", "Really good song and decoration. I'm concerned about the balancing, but it should be fine. <sup>we used to glide</sup>"), // among the fireflies
   new ToDo("Maybe Possibly Thing", "Funny memory level. I like memory and this looks like a good one!"),
   new ToDo("SorryForPartyRocking", "Really good all around. Currently taking a break from this as well. I'll probably beat it later.", 2),
   new ToDo("cave of heart", "Looks like a cool memory level. I don't know too much about this one since I just watched a video of it once"),
@@ -126,7 +127,6 @@ let toDoList = [
   new ToDo("Belloq", "Really cool-looking level with a great song and tons of music sync. I've heard the gameplay isn't as good, but hopefully everything else will make up for it."),
   new ToDo("Boogie", "I'm pretty sure I put this in just because it's XXL. I don't remember why this is here. Help me"),
   new ToDo("RASH", "I've been repeatedly recommended this since I started beating extremes, so here it is. I don't know if I'll ever actually do this."),
-  new ToDo("Black Blizzard", "VERY good-looking level with an extremely fun drop. The predrop is considerably less fun.", 3),
   new ToDo("Audio Expulsion", "Looks like it has really fun gameplay at least. Not sure about decoration or song."),
   new ToDo("Auditory Breaker", "Very cool remake of Sonic Wave. If I want to do Sonic Wave, I might do this as well."),
   new ToDo("Black Flag", "This is really just here because it looks SO GOOD. 2.2 optimization has helped a ton, so lag hopefully won't be nearly as much of an issue as it used to be."),
@@ -353,6 +353,10 @@ $(document).ready(function() {
                 currentDemon.attempts = 7118;
                 currentDemon.date = "1/13/2024";
                 break;
+              case "Black Blizzard":
+                currentDemon.attempts = 15114;
+                currentDemon.date = "6/11/2024";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -440,7 +444,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1</b></p>
+                <p>Projected list placement: <b>28-30</b></p>
               </div>
             </div>`);
         }
