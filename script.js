@@ -51,6 +51,7 @@ let demons = [
   new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "http://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=cLlibHpQQ9c"),
   new Demon("Reanimate", "1/18/2023", 6851, "ilnm & more", "N/A", "http://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=3A9K_eVj5nQ&t=1306s"),
   new Demon("HURRICANE", "5/4/2023", 5094, "BIANOX & more", "N/A", "http://i.ytimg.com/vi/WQcGIY8_28c/mqdefault.jpg", "https://www.youtube.com/watch?v=k3Xjceml5eM"),
+  new Demon("CICADA3302", "6/24/2024", 3554, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE"),
   new Demon("I NEVER DREAM", "6/25/2023", 3948, "skywalker14", "N/A", "http://i.ytimg.com/vi/9bumyVCkPiw/mqdefault.jpg", "https://www.youtube.com/watch?v=0e9FlAk_JXI"),
   new Demon("Crowd Control", "6/22/2023", 4909, "Deadlox & more", "N/A", "http://i.ytimg.com/vi/-q0iBUZti9s/mqdefault.jpg", "https://www.youtube.com/watch?v=rMrdggRE1gM"),
   new Demon("Napalm", "3/6/2023", "Unknown", "Marwec & more", "N/A", "http://i.ytimg.com/vi/ND--Ai4XVfM/mqdefault.jpg", "https://youtu.be/-ZQwUByHZ4Q?t=749"),
@@ -64,7 +65,7 @@ let demons = [
 ];
 
 let upcomingDemons = [
-  new Demon("CICADA3302", "idk", 0, "Darwin", "N/A", "http://i.ytimg.com/vi/DsM-e8yF5ys/mqdefault.jpg", "https://www.youtube.com/watch?v=uALmVDAcpkE")
+  211
 ];
 
 let demonRatings = [
@@ -97,6 +98,8 @@ let demonRatings = [
   new DemonRating("Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
   new DemonRating("Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
   new DemonRating("HURRICANE", 7, 8.5, 8, 5, "Littered with chokepoints. All of them are manageable, but still kind of annoying."),
+  new DemonRating("CICADA3302", 8, 9.5, 10, 9.5, "By far one of the greatest levels I've ever played. Incredible song representation, amazing effects, and great gameplay come together for one of \
+    the coolest Geometry Dash experiences I've ever had."),
   new DemonRating("I NEVER DREAM", 7, 7.5, 10, 7, "Absolutely gorgeous level with very strange yet fun gameplay. The first half is WAY harder than the second."),
   new DemonRating("Crowd Control", 6, 6.5, 7, 5.5, "Decent level significantly impacted by its heavy chokepoints. Kind of a chore to play from anywhere, but especially from 0."),
   new DemonRating("Napalm", 1.5, 3, 7.5, 7, "Current least favorite extreme. I despise this level. A lot of people say it's good, but I just hated it the whole way through."),
@@ -348,15 +351,17 @@ $(document).ready(function() {
                 break;
               case "DARKENED":
                 currentDemon.video = "https://www.youtube.com/watch?v=4llZUZGH4pg";
-                currentDemon.thumbnail = "http://i.ytimg.com/vi/4llZUZGH4pg/mqdefault.jpg";
                 currentDemon.creators = "BIANOX & more";
                 currentDemon.attempts = 7118;
                 currentDemon.date = "1/13/2024";
                 break;
               case "Black Blizzard":
+                currentDemon.video = "https://www.youtube.com/watch?v=OENvXGj2Mc8";
+                currentDemon.thumbnail = "http://i.ytimg.com/vi/OENvXGj2Mc8/mqdefault.jpg"
                 currentDemon.attempts = 15114;
                 currentDemon.date = "6/11/2024";
                 break;
+              
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -414,9 +419,9 @@ $(document).ready(function() {
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "Black Blizzard":
-                  currentDemon.date = "5/25/2024";
-                  break;
+                case "Killbot":
+                currentDemon.date = "6/24/2024";
+                break;
               }
               resolve(currentDemon);
             }).fail(function() {
@@ -444,7 +449,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>28-30</b></p>
+                <p>Projected list placement: <b>1-2</b></p>
               </div>
             </div>`);
         }
