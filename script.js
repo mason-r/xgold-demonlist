@@ -29,8 +29,13 @@ class ToDo {
   }
 }
 
+let upcomingDemons = [
+  new Demon("Neurostasis", "7/20/2024", 0, "KiwiPenguin", "N/A", "https://i.ytimg.com/vi/EY24IAPPrFo/mqdefault.jpg", "https://www.youtube.com/watch?v=EY24IAPPrFo")
+];
+
 let demons = [
   211,
+  255,
   204,
   new Demon("ruber cash 22", "5/21/2024", 10676, "KoKo43", "N/A", "https://i.ytimg.com/vi/VhR1m1OolZs/mqdefault.jpg", "https://www.youtube.com/watch?v=VhR1m1OolZs"),
   new Demon("troll level two", "12/8/2023", 14429, "Lexy & more", "N/A", "https://i.ytimg.com/vi/WyXmTx6wZxw/mqdefault.jpg", "https://www.youtube.com/watch?v=WyXmTx6wZxw"),
@@ -65,13 +70,10 @@ let demons = [
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "https://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=ydQ-__LqEFM&t=795s")
 ];
 
-let upcomingDemons = [
-  255
-];
-
 let demonRatings = [
   new DemonRating("Killbot", 9.5, 9, 7, 5, "Fluked the last 40%, which is easily the most insane fluke I have ever had. Really fun gameplay, song kinda sucks but it fits well with the level. \
     Enjoyment would be 10 if I didn't get a headache after every stream"),
+  new DemonRating("Ethereal Artifice", 6.5, 7.5, 8, 9, "Pretty good level that I got very unlucky on (82x2 and 81). Not quite as good as everyone says it is, but not terrible either."),
   new DemonRating("Black Blizzard", 7.5, 8.5, 9, 9, "First emerald demon!! The drop is REALLY REALLY GOOD, the predrop is expectedly very hard. Great level though"),
   new DemonRating("ruber cash 22", 6, 6.5, 7.5, 6, "The final Jade demon. There were definitely better options (and worse ones (madmansion)), but I chose this one I guess. Pretty okay level,\
     bizarre balancing, chokepoints, you know the drill"),
@@ -140,7 +142,6 @@ let toDoList = [
   new ToDo("Glitzy Bozo Land", "The only unrated extreme on here. The gameplay gimmick is super cool, and I love the kaizo theme."),
   new ToDo("Ziroikabi", "Probably pretty fun? Plus it's in GDDP Emerald tier, which makes me want to do it a bit more."),
   new ToDo("Berserk", "Very cool-looking Zylenox level. Planning on doing this one for GDDP Emerald tier. Mixed reviews on the balancing, but fun overall."),
-  new ToDo("Ethereal Artifice", "Absolutely amazing level all-around. npesta has repeatedly sung its praises, and I don't think he'll be wrong about this one.", 3),
   new ToDo("Ameliorate", "Really weird but pretty cool level. The weirdness is charming in a way. Also very long.", 2),
   new ToDo("ConFusion", "Apparently the best memory level ever. I like memory gameplay, so this will be worth a shot."),
   new ToDo("Night Rider", "I ADORE the design of this level throughout the entire thing. I just hope the gameplay can match it.", 2),
@@ -152,14 +153,11 @@ let toDoList = [
   new ToDo("Chromatic Haze", "Sequel to Prismatic Haze, one of my favorite extreme demons. The gameplay and decoration are similar, so I think I'll definitely enjoy this one too.", 3),
   new ToDo("Ocular Miracle", "A level that takes you on a journey. The level is VERY long, so it'll be a good nerve control/stamina challenge.", 2),
   new ToDo("Sunset Sandstorm", "Super cool memory level that perfectly does the song justice. The predrop is half of the level, so that might get annoying."),
-  new ToDo("Kuzureta", "Femboy demon"),
   new ToDo("Sonic Wave", "I want to do this purely for the nostalgia and the level's history. I know that's not a good reason, and I know I won't enjoy the level much either.", 0),
   new ToDo("Sparkling", "Gameplay looks really cool and goes super well with the song. Looks like a blast all around."),
   new ToDo("Shutdown", "I LOVE Oli gameplay. Ulon was a total blast, and from what it looks like, this level is basically just much harder Ulon.", 2),
-  new ToDo("Wasureta", "Femboy demon"),
   new ToDo("Requiem", "HOLY SHIT", 4),
   new ToDo("Storming Summit", "Of course I have to do the only Celeste-themed level on the demon list. I LOVE CELESTE!!!!!!", 3),
-  new ToDo("Kowareta", "Femboy demon"),
   new ToDo("Nhelv", "Extremely cool-looking memory/learny level. I really love the design of this level.", 2),
   new ToDo("Fog", "Very very interesting level with a randomized memory part apparently?? I wonder how many memory levels I have on here.", 2),
   new ToDo("Bloodlust", "A must-do for literally everyone. A rite of passage into the top tier. Et cetera"),
@@ -367,7 +365,9 @@ $(document).ready(function() {
                 currentDemon.attempts = 13759;
                 currentDemon.date = "6/28/2024";
                 break;
-              
+              case "Ethereal Artifice":
+                currentDemon.attempts = 12004;
+                currentDemon.date = "7/20/2024";
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -455,7 +455,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1-2</b></p>
+                <p>Projected list placement: <b>1-3</b></p>
               </div>
             </div>`);
         }
