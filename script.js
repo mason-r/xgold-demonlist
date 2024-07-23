@@ -158,7 +158,7 @@ let toDoList = [
   new ToDo("Shutdown", "I LOVE Oli gameplay. Ulon was a total blast, and from what it looks like, this level is basically just much harder Ulon.", 2),
   new ToDo("Requiem", "HOLY SHIT", 4),
   new ToDo("Storming Summit", "Of course I have to do the only Celeste-themed level on the demon list. I LOVE CELESTE!!!!!!", 3),
-  new ToDo("Nhelv", "Extremely cool-looking memory/learny level. I really love the design of this level.", 2),
+  new ToDo("Nhelv", "Extremely cool-looking memory/learny level. I really love the design of this level.", 4),
   new ToDo("Fog", "Very very interesting level with a randomized memory part apparently?? I wonder how many memory levels I have on here.", 2),
   new ToDo("Bloodlust", "A must-do for literally everyone. A rite of passage into the top tier. Et cetera"),
   new ToDo("RUTHLESS", "Absolutely gorgeous extreme demon. From what I hear, the gameplay doesn't quite get to the level that the decoration does.", 2),
