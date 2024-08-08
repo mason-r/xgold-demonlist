@@ -30,11 +30,12 @@ class ToDo {
 }
 
 let upcomingDemons = [
-  new Demon("Neurostasis", "7/20/2024", 0, "KiwiPenguin", "N/A", "https://i.ytimg.com/vi/EY24IAPPrFo/mqdefault.jpg", "https://www.youtube.com/watch?v=EY24IAPPrFo")
+  new Demon("Apollo 11", "8/8/2024", 0, "nasgubb", "N/A", "https://i.ytimg.com/vi/r9SkrrOecpY/mqdefault.jpg", "https://www.youtube.com/watch?v=r9SkrrOecpY")
 ];
 
 let demons = [
   211,
+  new Demon("Neurostasis", "8/8/2024", 14193, "KiwiPenguin", "N/A", "https://i.ytimg.com/vi/EY24IAPPrFo/mqdefault.jpg", "https://www.youtube.com/watch?v=EY24IAPPrFo"),
   255,
   204,
   new Demon("ruber cash 22", "5/21/2024", 10676, "KoKo43", "N/A", "https://i.ytimg.com/vi/VhR1m1OolZs/mqdefault.jpg", "https://www.youtube.com/watch?v=VhR1m1OolZs"),
@@ -73,6 +74,8 @@ let demons = [
 let demonRatings = [
   new DemonRating("Killbot", 9.5, 9, 7, 5, "Fluked the last 40%, which is easily the most insane fluke I have ever had. Really fun gameplay, song kinda sucks but it fits well with the level. \
     Enjoyment would be 10 if I didn't get a headache after every stream"),
+  new DemonRating("Neurostasis", 9.5, 9, 8.5, 8.5, "Extremely fun level that I got <span style='text-decoration:underline;' title='78, 79x2, 80x2, 82, 83, 84'>very unlucky on</span>, \
+    but still enjoyed so much. An absolute masterpiece of song representation."),
   new DemonRating("Ethereal Artifice", 6.5, 7.5, 8, 9, "Pretty good level that I got very unlucky on (82x2 and 81). Not quite as good as everyone says it is, but not terrible either."),
   new DemonRating("Black Blizzard", 7.5, 8.5, 9, 9, "First emerald demon!! The drop is REALLY REALLY GOOD, the predrop is expectedly very hard. Great level though"),
   new DemonRating("ruber cash 22", 6, 6.5, 7.5, 6, "The final Jade demon. There were definitely better options (and worse ones (madmansion)), but I chose this one I guess. Pretty okay level,\
@@ -298,7 +301,7 @@ $(document).ready(function() {
         let currentDemon;
         if (typeof currentItem === "number") {
           $.ajax({
-            url: "https://pointercrate.com/api/v2/demons/" + currentItem + "/",
+            url: "https://pointercrate.com/api/v2/demons/" + currentItem,
             method: "GET"
           }).done(function(data) {
             let creatorName = getCreatorString(data.data.creators);
@@ -362,10 +365,13 @@ $(document).ready(function() {
                 currentDemon.date = "6/11/2024";
                 break;
               case "Killbot":
+                currentDemon.video = "https://www.youtube.com/watch?v=aE6SbYD9OYQ&t=1282s";
+                currentDemon.thumbnail = "https://i.ytimg.com/vi/aE6SbYD9OYQ/mqdefault.jpg";
                 currentDemon.attempts = 13759;
                 currentDemon.date = "6/28/2024";
                 break;
               case "Ethereal Artifice":
+                currentDemon.video = "https://www.youtube.com/watch?v=bqO0u7ZYXlM";
                 currentDemon.attempts = 12004;
                 currentDemon.date = "7/20/2024";
             }
@@ -455,7 +461,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1-3</b></p>
+                <p>Projected list placement: <b>2-3</b></p>
               </div>
             </div>`);
         }
