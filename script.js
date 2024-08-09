@@ -30,7 +30,7 @@ class ToDo {
 }
 
 let upcomingDemons = [
-  new Demon("Apollo 11", "8/8/2024", 0, "nasgubb", "N/A", "https://i.ytimg.com/vi/r9SkrrOecpY/mqdefault.jpg", "https://www.youtube.com/watch?v=r9SkrrOecpY")
+  444
 ];
 
 let demons = [
@@ -431,8 +431,8 @@ $(document).ready(function() {
               );
               // Clean up the data: replace objects/arrays in creators
               switch (currentDemon.name) {
-                case "Ethereal Artifice":
-                currentDemon.date = "6/29/2024";
+                case "Apollo 11":
+                currentDemon.date = "8/8/2024";
                 break;
               }
               resolve(currentDemon);
