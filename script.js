@@ -68,6 +68,7 @@ let demons = [
   new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "https://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=EBzDURIuDQE"),
   190,
   new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","https://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
+  511,
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "https://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=ydQ-__LqEFM&t=795s")
 ];
 
@@ -117,6 +118,7 @@ let demonRatings = [
   new DemonRating("niwa", 6, 7, 8.5, 8.5, "Pretty fun level with some fairly annoying chokepoints, particularly the last ship (where I died three times)."),
   new DemonRating("Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
   new DemonRating("Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
+  new DemonRating("Codependence", 8, 6, 6, 7.5, "<b>RATING IS BASED ON MY INDIVIDUAL GAMEPLAY.</b> This was only fun because I beat it with a friend. Level is not great"),
   new DemonRating("Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ];
 
@@ -374,6 +376,11 @@ $(document).ready(function() {
                 currentDemon.video = "https://www.youtube.com/watch?v=bqO0u7ZYXlM";
                 currentDemon.attempts = 12004;
                 currentDemon.date = "7/20/2024";
+              case "Codependence":
+                currentDemon.position = "30 (not really)";
+                currentDemon.video = "https://www.youtube.com/watch?v=FVFagQ__Z4Y";
+                currentDemon.attempts = 11239;
+                currentDemon.date = "1/13/2025"
             }
             resolve(currentDemon);
           }).fail(function() {
