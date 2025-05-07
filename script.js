@@ -65,6 +65,7 @@ let demons = [
   new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","https://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=61xftfDyl8E"),
   new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "https://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=qLmpGXa_dXk&t=882s"),
   new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "https://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=RU4BYzCgEAQ"),
+  new Demon("Crystal Crusher", "3/17/2025", 18390, "Zeniux & Zeus", "N/A", "https://i.ytimg.com/vi/TtoBzys4TV4/mqdefault.jpg", "https://www.youtube.com/watch?v=pgyGKCzu3EM"),
   new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "https://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=EBzDURIuDQE"),
   190,
   new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","https://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
@@ -115,10 +116,11 @@ let demonRatings = [
   new DemonRating("Dismal Duststorm", 8, 9, 10, 8.5, "Awesome desert-themed demon with extremely good decoration. I got very unlucky, but still enjoyed the level a lot."),
   new DemonRating("Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
   new DemonRating("troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
+  new DemonRating("Crystal Crusher", 8.5, 8, 8.5, 6, "<b>RATING IS BASED ON MY INDIVIDUAL GAMEPLAY.</b><br> Hardest two-player level! Pretty fun, some cool mechanics in the drop."),
   new DemonRating("niwa", 6, 7, 8.5, 8.5, "Pretty fun level with some fairly annoying chokepoints, particularly the last ship (where I died three times)."),
   new DemonRating("Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
   new DemonRating("Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
-  new DemonRating("Codependence", 8, 6, 6, 7.5, "<b>RATING IS BASED ON MY INDIVIDUAL GAMEPLAY.</b> This was only fun because I beat it with a friend. Level is not great"),
+  new DemonRating("Codependence", 8, 6, 6, 7.5, "<b>RATING IS BASED ON MY INDIVIDUAL GAMEPLAY.</b><br> This was only fun because I beat it with a friend. Level is not great"),
   new DemonRating("Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ];
 
