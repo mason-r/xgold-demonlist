@@ -30,11 +30,12 @@ class ToDo {
 }
 
 let upcomingDemons = [
-  444
+  294
 ];
 
 let demons = [
   211,
+  444,
   new Demon("Neurostasis", "8/8/2024", 14193, "KiwiPenguin", "N/A", "https://i.ytimg.com/vi/EY24IAPPrFo/mqdefault.jpg", "https://www.youtube.com/watch?v=EY24IAPPrFo"),
   255,
   204,
@@ -76,6 +77,7 @@ let demons = [
 let demonRatings = [
   new DemonRating("Killbot", 9.5, 9, 7, 5, "Fluked the last 40%, which is easily the most insane fluke I have ever had. Really fun gameplay, song kinda sucks but it fits well with the level. \
     Enjoyment would be 10 if I didn't get a headache after every stream"),
+  new DemonRating("Apollo 11", 8, 8.5, 7, 8.5, "This is (I think) the longest I've taken to beat an extreme at <i>ten months</i>! Fun level, pretty first half heavy"),
   new DemonRating("Neurostasis", 9.5, 9, 8.5, 8.5, "Extremely fun level that I got <span style='text-decoration:underline;' title='78, 79x2, 80x2, 82, 83, 84'>very unlucky on</span>, \
     but still enjoyed so much. An absolute masterpiece of song representation."),
   new DemonRating("Ethereal Artifice", 6.5, 7.5, 8, 9, "Pretty good level that I got very unlucky on (82x2 and 81). Not quite as good as everyone says it is, but not terrible either."),
@@ -378,11 +380,18 @@ $(document).ready(function() {
                 currentDemon.video = "https://www.youtube.com/watch?v=bqO0u7ZYXlM";
                 currentDemon.attempts = 12004;
                 currentDemon.date = "7/20/2024";
+                break;
               case "Codependence":
                 currentDemon.position = "30 (not really)";
                 currentDemon.video = "https://www.youtube.com/watch?v=FVFagQ__Z4Y";
                 currentDemon.attempts = 11239;
-                currentDemon.date = "1/13/2025"
+                currentDemon.date = "1/13/2025";
+                break;
+              case "Apollo 11":
+                currentDemon.video = "https://www.youtube.com/watch?v=LwZWpnHiSgI";
+                currentDemon.attempts = 14638;
+                currentDemon.date = "5/6/2025";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -439,11 +448,7 @@ $(document).ready(function() {
                 data.data.video
               );
               // Clean up the data: replace objects/arrays in creators
-              switch (currentDemon.name) {
-                case "Apollo 11":
-                currentDemon.date = "8/8/2024";
-                break;
-              }
+              currentDemon.date = "6/10/2025"
               resolve(currentDemon);
             }).fail(function() {
               console.log("API error");
@@ -470,7 +475,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>2-3</b></p>
+                <p>Projected list placement: <b>1</b></p>
               </div>
             </div>`);
         }
