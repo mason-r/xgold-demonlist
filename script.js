@@ -30,10 +30,11 @@ class ToDo {
 }
 
 let upcomingDemons = [
-  294
+  369
 ];
 
 let demons = [
+  294,
   211,
   444,
   new Demon("Neurostasis", "8/8/2024", 14193, "KiwiPenguin", "N/A", "https://i.ytimg.com/vi/EY24IAPPrFo/mqdefault.jpg", "https://www.youtube.com/watch?v=EY24IAPPrFo"),
@@ -75,6 +76,7 @@ let demons = [
 ];
 
 let demonRatings = [
+  new DemonRating("Chromatic Haze", 9, 9, 8, 8.5, "I wanted to do this level for a very long time, and I'm super glad to have it done! I was not glad to die at 97% though"),
   new DemonRating("Killbot", 9.5, 9, 7, 5, "Fluked the last 40%, which is easily the most insane fluke I have ever had. Really fun gameplay, song kinda sucks but it fits well with the level. \
     Enjoyment would be 10 if I didn't get a headache after every stream"),
   new DemonRating("Apollo 11", 8, 8.5, 7, 8.5, "This is (I think) the longest I've taken to beat an extreme at <i>ten months</i>! Fun level, pretty first half heavy"),
@@ -159,7 +161,6 @@ let toDoList = [
   new ToDo("Bitcrusher", "Cool-looking memory level, somewhat similar in theme to Killbot. Another memory level I put here because I like memory."),
   new ToDo("WOW", "Extremely high-CPS and sync-based level. I love the song and the gameplay style. I can't wait to beat this someday!", 4),
   new ToDo("super probably level", "Pretty funny memory level that I may not end up doing after all. I did one practice run of it and it took a long time."),
-  new ToDo("Chromatic Haze", "Sequel to Prismatic Haze, one of my favorite extreme demons. The gameplay and decoration are similar, so I think I'll definitely enjoy this one too.", 3),
   new ToDo("Ocular Miracle", "A level that takes you on a journey. The level is VERY long, so it'll be a good nerve control/stamina challenge.", 2),
   new ToDo("Sunset Sandstorm", "Super cool memory level that perfectly does the song justice. The predrop is half of the level, so that might get annoying."),
   new ToDo("Sonic Wave", "I want to do this purely for the nostalgia and the level's history. I know that's not a good reason, and I know I won't enjoy the level much either.", 0),
@@ -392,6 +393,10 @@ $(document).ready(function() {
                 currentDemon.attempts = 14638;
                 currentDemon.date = "5/6/2025";
                 break;
+              case "Chromatic Haze":
+                currentDemon.video = "https://www.youtube.com/watch?v=p8yAvDbLsOE";
+                currentDemon.attempts = 19233;
+                currentDemon.date = "7/31/2025";
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -448,7 +453,7 @@ $(document).ready(function() {
                 data.data.video
               );
               // Clean up the data: replace objects/arrays in creators
-              currentDemon.date = "6/10/2025"
+              currentDemon.date = "8/1/2025";
               resolve(currentDemon);
             }).fail(function() {
               console.log("API error");
