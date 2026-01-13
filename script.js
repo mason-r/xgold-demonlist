@@ -76,6 +76,7 @@ let demons = [
 ];
 
 let demonRatings = [
+  new DemonRating("Requiem", 9.5, 8.5, 10, 8, "Absolutely insane level that I had wanted to beat for a very, very long time. Here we are now. Super fun but sort of unbalanced"),
   new DemonRating("Chromatic Haze", 9, 9, 8, 8.5, "I wanted to do this level for a very long time, and I'm super glad to have it done! I was not glad to die at 97% though"),
   new DemonRating("Killbot", 9.5, 9, 7, 5, "Fluked the last 40%, which is easily the most insane fluke I have ever had. Really fun gameplay, song kinda sucks but it fits well with the level. \
     Enjoyment would be 10 if I didn't get a headache after every stream"),
