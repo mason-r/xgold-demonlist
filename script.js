@@ -393,6 +393,7 @@ $(document).ready(function() {
                 break;
               case "Requiem":
                 currentDemon.video = "https://www.youtube.com/watch?v=duh8oLH4KEU";
+                currentDemon.thumbnail = "https://i.ytimg.com/vi/duh8oLH4KEU/mqdefault.jpg"
                 currentDemon.attempts = 29051;
                 currentDemon.date = "12/19/2025";
                 break;
