@@ -30,10 +30,11 @@ class ToDo {
 }
 
 let upcomingDemons = [
-  369
+  404
 ];
 
 let demons = [
+  369,
   294,
   211,
   444,
@@ -56,6 +57,7 @@ let demons = [
   new Demon("moment", "8/1/2023", 8024, "lexycat & icedcave", "N/A", "https://i.ytimg.com/vi/bLfKsN4NCNY/mqdefault.jpg", "https://www.youtube.com/watch?v=uURizFayTI8"),
   new Demon("Motorbreath", "8/6/2023", 9370, "TwisterDude161", "N/A", "https://i.ytimg.com/vi/R41Yj8XpMhM/mqdefault.jpg", "https://www.youtube.com/watch?v=xFHwZ4uZK5c"),
   new Demon("U235", "7/15/2023", 8249, "oleki", "N/A","https://i.ytimg.com/vi/eGwXAJej5WU/mqdefault.jpg", "https://www.youtube.com/watch?v=c2fogGZbQII"),
+  new Demon("find the answer", "6/10/2025", 15603, "qalli", "N/A", "https://i.ytimg.com/vi/Kq5_4Ku5Klc/mqdefault.jpg", "https://www.youtube.com/watch?v=aoUBM-JD2PE"),
   new Demon("BROWNOIX", "7/1/2023", 8084, "ArtaxFerSarh & more", "N/A", "https://i.ytimg.com/vi/nnJuOHHseaE/mqdefault.jpg", "https://www.youtube.com/watch?v=j6oFiliI1Ds"),
   new Demon("Reflective", "2/20/2023", 7108, "Mojitoz & more", "N/A", "https://i.ytimg.com/vi/1fzhBT_7Fos/mqdefault.jpg", "https://www.youtube.com/watch?v=cLlibHpQQ9c"),
   new Demon("Reanimate", "1/18/2023", 6851, "ilnm & more", "N/A", "https://i.ytimg.com/vi/jk-r4_Nctes/mqdefault.jpg", "https://www.youtube.com/watch?v=3A9K_eVj5nQ&t=1306s"),
@@ -67,10 +69,8 @@ let demons = [
   new Demon("Dismal Duststorm", "7/6/2023", 3425, "Multiverse55", "N/A","https://i.ytimg.com/vi/l-hYBdrM0bc/mqdefault.jpg", "https://www.youtube.com/watch?v=61xftfDyl8E"),
   new Demon("Lost Love",  "3/6/2023", 6409,"TheBlackHell", "N/A", "https://i.ytimg.com/vi/KGh4Fe5SmXc/mqdefault.jpg", "https://www.youtube.com/watch?v=qLmpGXa_dXk&t=882s"),
   new Demon("troll level", "2/1/2023", 8158, "lexycat, glitchi & lena", "N/A", "https://i.ytimg.com/vi/eqYr6MLwJE4/mqdefault.jpg", "https://www.youtube.com/watch?v=RU4BYzCgEAQ"),
-  new Demon("Crystal Crusher", "3/17/2025", 18390, "Zeniux & Zeus", "N/A", "https://i.ytimg.com/vi/TtoBzys4TV4/mqdefault.jpg", "https://www.youtube.com/watch?v=pgyGKCzu3EM"),
   new Demon("niwa", "9/23/2023", 3333, "Teno & more", "N/A", "https://i.ytimg.com/vi/1tven_pFftA/mqdefault.jpg", "https://www.youtube.com/watch?v=EBzDURIuDQE"),
   190,
-  new Demon("Precipitance", "4/26/2023", 6332, "Extravagon", "N/A","https://i.ytimg.com/vi/_W9xA5lqmLs/mqdefault.jpg", "https://www.youtube.com/watch?v=9p3VQOeXbjY"),
   511,
   new Demon("Acu", "1/28/2023", 4026, "neigefeu", "N/A", "https://i.ytimg.com/vi/z6l74Mkoxm8/mqdefault.jpg", "https://www.youtube.com/watch?v=ydQ-__LqEFM&t=795s")
 ];
@@ -108,6 +108,7 @@ let demonRatings = [
   new DemonRating("Motorbreath", 5.5, 6.5, 8, 9, "This has an extremely difficult predrop and a very easy second half. This level got pretty boring, but the gameplay was fun despite it being \
     unbalanced. This also gets bonus points for the song."),
   new DemonRating("U235", 7.5, 9, 8, 6.5, "I raced this with 8 people and placed 4th! Very fun level, though the first half gets somewhat annoying after too long."),
+  new DemonRating("find the answer", 9.5, 9, 10, 7, "My first 2.2 extreme! This level is insanely cool and super fun (except for the first click)"),
   new DemonRating("BROWNOIX", 8.5, 9, 8, 5.5, "Very fun level with super cool dual gameplay. The first half is quite heavy."),
   new DemonRating("Reflective", 7.5, 5.5, 8, 8.5, "Very annoying predrop, everything else is great."),
   new DemonRating("Reanimate", 7, 6.5, 8, 9.5, "First extreme demon! The song is the best part, which is usually a red flag, but this song is just so good that it's fine."),
@@ -120,11 +121,9 @@ let demonRatings = [
   new DemonRating("Dismal Duststorm", 8, 9, 10, 8.5, "Awesome desert-themed demon with extremely good decoration. I got very unlucky, but still enjoyed the level a lot."),
   new DemonRating("Lost Love", 9.5, 9.5, 7.5, 9.5, "Fantastic memory level and definitely one of my favorite extremes ever."),
   new DemonRating("troll level", 6.5, 8, 6, 7.5, "Predrop is not great, the drop is awesome."),
-  new DemonRating("Crystal Crusher", 8.5, 8, 8.5, 6, "<b>RATING IS BASED ON MY INDIVIDUAL GAMEPLAY.</b><br> Hardest two-player level! Pretty fun, some cool mechanics in the drop."),
   new DemonRating("niwa", 6, 7, 8.5, 8.5, "Pretty fun level with some fairly annoying chokepoints, particularly the last ship (where I died three times)."),
   new DemonRating("Retention", 7.5, 8.5, 7, 7, "Has exactly one very annoying chokepoint. Other than that, it's a very fun level."),
   new DemonRating("Precipitance", 6, 6, 7, 6, "Very average level. This is my easy"),
-  new DemonRating("Codependence", 8, 6, 6, 7.5, "<b>RATING IS BASED ON MY INDIVIDUAL GAMEPLAY.</b><br> This was only fun because I beat it with a friend. Level is not great"),
   new DemonRating("Acu", 8, 9, 7, 7.5, "Easiest extreme. Somewhat annoying predrop and postdrop, which is the opposite of good balancing.")
 ];
 
@@ -166,7 +165,6 @@ let toDoList = [
   new ToDo("Sonic Wave", "I want to do this purely for the nostalgia and the level's history. I know that's not a good reason, and I know I won't enjoy the level much either.", 0),
   new ToDo("Sparkling", "Gameplay looks really cool and goes super well with the song. Looks like a blast all around."),
   new ToDo("Shutdown", "I LOVE Oli gameplay. Ulon was a total blast, and from what it looks like, this level is basically just much harder Ulon.", 2),
-  new ToDo("Requiem", "HOLY SHIT", 4),
   new ToDo("Storming Summit", "Of course I have to do the only Celeste-themed level on the demon list. I LOVE CELESTE!!!!!!", 3),
   new ToDo("Nhelv", "Extremely cool-looking memory/learny level. I really love the design of this level.", 4),
   new ToDo("Fog", "Very very interesting level with a randomized memory part apparently?? I wonder how many memory levels I have on here.", 2),
@@ -382,12 +380,6 @@ $(document).ready(function() {
                 currentDemon.attempts = 12004;
                 currentDemon.date = "7/20/2024";
                 break;
-              case "Codependence":
-                currentDemon.position = "30 (not really)";
-                currentDemon.video = "https://www.youtube.com/watch?v=FVFagQ__Z4Y";
-                currentDemon.attempts = 11239;
-                currentDemon.date = "1/13/2025";
-                break;
               case "Apollo 11":
                 currentDemon.video = "https://www.youtube.com/watch?v=LwZWpnHiSgI";
                 currentDemon.attempts = 14638;
@@ -397,6 +389,12 @@ $(document).ready(function() {
                 currentDemon.video = "https://www.youtube.com/watch?v=p8yAvDbLsOE";
                 currentDemon.attempts = 19233;
                 currentDemon.date = "7/31/2025";
+                break;
+              case "Requiem":
+                currentDemon.video = "https://www.youtube.com/watch?v=duh8oLH4KEU";
+                currentDemon.attempts = 29051;
+                currentDemon.date = "12/19/2025";
+                break;
             }
             resolve(currentDemon);
           }).fail(function() {
@@ -453,7 +451,7 @@ $(document).ready(function() {
                 data.data.video
               );
               // Clean up the data: replace objects/arrays in creators
-              currentDemon.date = "8/1/2025";
+              currentDemon.date = "1/5/2026";
               resolve(currentDemon);
             }).fail(function() {
               console.log("API error");
@@ -480,7 +478,7 @@ $(document).ready(function() {
                 <h2>By ${currentDemon.creators}</h2>
                 <p>Demon list position: ${currentDemon.position}</p>
                 <p>Date started: ${currentDemon.date}</p>
-                <p>Projected list placement: <b>1</b></p>
+                <p>Projected list placement: <b>2-3</b></p>
               </div>
             </div>`);
         }
